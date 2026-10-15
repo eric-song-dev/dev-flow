@@ -1,0 +1,644 @@
+{
+ "summary": {
+  "1": {
+   "runs": 4,
+   "median_s": 94.65,
+   "mean_s": 92.93,
+   "min_s": 80.56,
+   "max_s": 101.86
+  },
+  "3": {
+   "runs": 4,
+   "median_s": 53.34,
+   "mean_s": 55.45,
+   "min_s": 46.05,
+   "max_s": 69.09
+  }
+ },
+ "results": [
+  {
+   "parallel": 1,
+   "wall_s": 88.54,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 11.0,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 50.39,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 26.89,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.26,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 88540,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 3,
+   "wall_s": 53.61,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 10.16,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 53.47,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 29.71,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.13,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 53608,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 3,
+   "wall_s": 53.06,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 8.47,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 52.88,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 32.69,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.18,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 53061,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 1,
+   "wall_s": 80.56,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 9.82,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 40.54,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 30.0,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.21,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 80562,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 1,
+   "wall_s": 100.75,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 15.36,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 51.92,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 33.23,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.24,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 100745,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 3,
+   "wall_s": 46.05,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 12.03,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 45.82,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 27.68,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.22,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 46047,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 3,
+   "wall_s": 69.09,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 19.38,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 68.86,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 37.8,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.22,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 69090,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  },
+  {
+   "parallel": 1,
+   "wall_s": 101.86,
+   "tasks": [
+    {
+     "task": "repo_health",
+     "status": "success",
+     "seconds": 0.0,
+     "confidence": null
+    },
+    {
+     "task": "issue_analysis",
+     "status": "success",
+     "seconds": 11.01,
+     "confidence": 0.57
+    },
+    {
+     "task": "pr_review",
+     "status": "success",
+     "seconds": 56.37,
+     "confidence": 0.68
+    },
+    {
+     "task": "ci_debug",
+     "status": "success",
+     "seconds": 34.24,
+     "confidence": 0.78
+    },
+    {
+     "task": "rag_search",
+     "status": "success",
+     "seconds": 0.24,
+     "confidence": 0.68
+    }
+   ],
+   "plan": [
+    [
+     "repo_health",
+     []
+    ],
+    [
+     "issue_analysis",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "pr_review",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "ci_debug",
+     [
+      "repo_health"
+     ]
+    ],
+    [
+     "rag_search",
+     [
+      "repo_health"
+     ]
+    ]
+   ],
+   "observer": "Observer 发现 3 个阻塞项和 1 个警告；置信度 0.10。",
+   "metrics": {
+    "duration_ms": 101864,
+    "task_count": 5,
+    "plan_task_count": 5,
+    "execution_rounds": 1,
+    "replan_count": 0,
+    "success_count": 5,
+    "error_count": 0,
+    "skipped_count": 0,
+    "observer_findings": 4
+   }
+  }
+ ]
+}

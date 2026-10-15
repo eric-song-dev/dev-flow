@@ -1,0 +1,1754 @@
+{
+ "summary": {
+  "cases": 20,
+  "http_ok": 20,
+  "tool_selection_accuracy": 0.9,
+  "first_tool_accuracy": 0.8,
+  "completed": 18,
+  "runs_with_tool_errors": 5,
+  "latency_p50_s": 52.715,
+  "latency_p95_s": 262.54,
+  "llm_calls_total": 115,
+  "input_tokens_total": 2672880,
+  "output_tokens_total": 146997,
+  "cache_read_tokens_total": 2231424,
+  "cache_hit_ratio": 0.8348
+ },
+ "results": [
+  {
+   "id": "code-1",
+   "wall_s": 55.32,
+   "route": "workspace_search_code",
+   "called": [
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 7,
+    "tool_call_count": 11,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 7,
+   "input_tokens": 138421,
+   "output_tokens": 4354,
+   "cache_read_tokens": 106368,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 12607,
+    "prompt_observation_tokens": 9769,
+    "estimated_tokens_saved": 2838,
+    "source_observations": 11,
+    "prompt_observations": 11,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 29
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25564
+    ],
+    [
+     "model_decision",
+     26831
+    ],
+    [
+     "model_decision",
+     28752
+    ],
+    [
+     "model_decision",
+     31205
+    ],
+    [
+     "model_decision",
+     33231
+    ],
+    [
+     "model_decision",
+     35733
+    ],
+    [
+     "model_decision",
+     37919
+    ]
+   ],
+   "answer_head": "## 结论（先给答案）\n\n`Color` 解析 hex 字符串的链路是三段：\n\n```\nColor.__init__  →  parse_str  →  (r_hex_short | r_hex_long) + ints_to_rgba\npydantic_extra_types/color.py:72-89  →  :261-316  →  :51-52 / :319-341\n```\n\n即：字符串走 `parse_str()` 统一分派，hex 只是其中最先被尝试的一类正则分支。\n\n---\n\n## 1. 入口分派：字符串被送到 `parse_str`\n\n`pydantic_extra_type",
+   "conversation_id": "886968d8-b110-4ebe-b189-10f1e97afbee"
+  },
+  {
+   "id": "code-2",
+   "wall_s": 30.16,
+   "route": "workspace_read_file",
+   "called": [
+    "workspace.list_files",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": false,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 5,
+    "tool_call_count": 8,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 5,
+   "input_tokens": 87712,
+   "output_tokens": 1840,
+   "cache_read_tokens": 77440,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 5083,
+    "prompt_observation_tokens": 4929,
+    "estimated_tokens_saved": 154,
+    "source_observations": 8,
+    "prompt_observations": 8,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 21
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     26026
+    ],
+    [
+     "model_decision",
+     27212
+    ],
+    [
+     "model_decision",
+     29123
+    ],
+    [
+     "model_decision",
+     30126
+    ],
+    [
+     "model_decision",
+     32545
+    ]
+   ],
+   "answer_head": "## 结论\n\n**实现位置**：`pydantic_extra_types/phone_numbers.py`（整个模块只有这一个文件，两种用法都在里面）\n\n| 组件 | 位置 | 说明 |\n|---|---|---|\n| `PhoneNumberValidator` | `phone_numbers.py:166`（`@dataclass(frozen=True)`） | 注解式用法，配合 `Annotated[Union[str, phonenumbers.PhoneNumber], PhoneNumberValidator(...)]` 使用，可配置 `default_region`、`",
+   "conversation_id": "d6fd7c2a-2c17-492a-9e33-cf83faf4fc8f"
+  },
+  {
+   "id": "code-3",
+   "wall_s": 23.61,
+   "route": "workspace_search_code",
+   "called": [
+    "workspace.list_files",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": false,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 3,
+    "tool_call_count": 4,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 3,
+   "input_tokens": 49144,
+   "output_tokens": 1598,
+   "cache_read_tokens": 43648,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 3557,
+    "prompt_observation_tokens": 3125,
+    "estimated_tokens_saved": 432,
+    "source_observations": 4,
+    "prompt_observations": 4,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 11
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25536
+    ],
+    [
+     "model_decision",
+     27138
+    ],
+    [
+     "model_decision",
+     29510
+    ]
+   ],
+   "answer_head": "## 结论\n\n`DateTime` 的校验逻辑在 **`pydantic_extra_types/pendulum_dt.py`**，核心是 `DateTime` 类的两个方法：\n\n| 位置 | 符号 | 作用 |\n|---|---|---|\n| `pydantic_extra_types/pendulum_dt.py:35` | `class DateTime(_DateTime, metaclass=DateTimeSettings)` | 继承 `pendulum.DateTime` 的类型入口 |\n| `pydantic_extra_types/pendulum_dt.py:57` |",
+   "conversation_id": "660c23bc-d23f-450c-bb25-436271323e7f"
+  },
+  {
+   "id": "code-4",
+   "wall_s": 29.02,
+   "route": "workspace_search_code",
+   "called": [
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 4,
+    "tool_call_count": 5,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 4,
+   "input_tokens": 67145,
+   "output_tokens": 2191,
+   "cache_read_tokens": 59648,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 4991,
+    "prompt_observation_tokens": 4423,
+    "estimated_tokens_saved": 568,
+    "source_observations": 5,
+    "prompt_observations": 5,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 14
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25494
+    ],
+    [
+     "model_decision",
+     26698
+    ],
+    [
+     "model_decision",
+     28609
+    ],
+    [
+     "model_decision",
+     30976
+    ]
+   ],
+   "answer_head": "已读过工作区文件 `pydantic_extra_types/coordinate.py`（第 1–234 行），下面是准确实现。以下均为**证据**（行号为该文件当前内容）。\n\n## Latitude 的取值校验（第 53–96 行）\n\n`Latitude` 是 `float` 的子类，范围边界声明为 `ClassVar`：\n\n```python\nclass Latitude(float):\n    \"\"\"Latitude value should be between -90 and 90, inclusive. ...\"\"\"\n    min: ClassVar[float] = -90.",
+   "conversation_id": "a74a0275-f161-44e8-aec0-dc5cf71cfc7b"
+  },
+  {
+   "id": "overview-1",
+   "wall_s": 23.65,
+   "route": "workspace_read_file",
+   "called": [
+    "workspace.list_files",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "workspace.read_file",
+    "workspace.list_files"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "project_context_loaded",
+    "steps": 0,
+    "tool_call_count": 2,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 1,
+   "input_tokens": 2368,
+   "output_tokens": 1712,
+   "cache_read_tokens": 0,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 1712,
+    "prompt_observation_tokens": 1712,
+    "estimated_tokens_saved": 0,
+    "source_observations": 2,
+    "prompt_observations": 2,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 4
+   },
+   "prompt_calls": [
+    [
+     "final_from_observations",
+     23585
+    ]
+   ],
+   "answer_head": "## What the project does\n\n**Evidence (直接观察到):**\n- `README.md:1` — title is **\"Pydantic Extra Types\"**.\n- `README.md:8` — self-description: *\"A place for pydantic types that probably shouldn't exist in the main pydantic lib.\"* It points readers to `pydantic/pydantic#5012` for background (`README.md:1",
+   "conversation_id": "dd83b943-e805-4b2d-a0a5-aecbdeda690d"
+  },
+  {
+   "id": "issue-1",
+   "wall_s": 137.37,
+   "route": "semantic_search",
+   "called": [
+    "issue_agent.analyze_issue",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "devflow_search_evidence",
+    "workspace.list_files",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "rag.search_similar_documents"
+   ],
+   "expect": [
+    "issue_agent.analyze_issue"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed_with_tool_errors",
+    "reason": "model_final_answer",
+    "steps": 8,
+    "tool_call_count": 17,
+    "tool_error_count": 1
+   },
+   "tool_errors": [
+    {
+     "tool_name": "workspace.search_code",
+     "arguments": {
+      "query": "DomainStr punycode 326",
+      "path": "CHANGELOG.md",
+      "repo_full_name": "pydantic/pydantic-extra-types",
+      "message": "分析 Issue #326（DomainStr 无法校验 punycode TLD），给出分类、优先级、复杂度和下一步。"
+     },
+     "status": "error",
+     "error": "搜索路径不存在。",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_00_Fey0fJYzH1TfoDx44G4U2115",
+     "skill_name": null,
+     "skill_title": null,
+     "skill_version": null,
+     "skill_steps": [],
+     "skill_activation_mode": null,
+     "skill_activation_reason": null,
+     "skill_instruction_digest": null
+    }
+   ],
+   "llm_calls": 8,
+   "input_tokens": 172240,
+   "output_tokens": 9887,
+   "cache_read_tokens": 145280,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 13539,
+    "prompt_observation_tokens": 13135,
+    "estimated_tokens_saved": 404,
+    "source_observations": 17,
+    "prompt_observations": 17,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 42
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25786
+    ],
+    [
+     "model_decision",
+     27615
+    ],
+    [
+     "model_decision",
+     29387
+    ],
+    [
+     "model_decision",
+     31938
+    ],
+    [
+     "model_decision",
+     34004
+    ],
+    [
+     "model_decision",
+     37259
+    ],
+    [
+     "model_decision",
+     39537
+    ],
+    [
+     "model_decision",
+     42696
+    ]
+   ],
+   "answer_head": "## Issue #326 分诊结论（DomainStr 无法校验 punycode TLD）\n\n### 一句话结论\n这是一个**已经修复的 Bug**（当前 checkout 已有修复代码 + 回归测试），Issue 本身大概率可关闭；需要一次实时状态确认，而不是再排开发任务。下面区分「证据」与「推断」。\n\n---\n\n### 1. 分类（Bug / 正确性缺陷）\n\n- **类别：Bug（validator 假阴性）**，不是 feature request，也不是 docs。\n- **WHY（证据）**：`pydantic_extra_types/domain.py:17-19` 的正则在当",
+   "conversation_id": "0f05a120-00d6-49ea-b37a-c1bf529b8685"
+  },
+  {
+   "id": "issue-2",
+   "wall_s": 277.24,
+   "route": "tool_loop_budget_exhausted",
+   "called": [
+    "issue_agent.analyze_issue",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "devflow_search_evidence",
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "devflow_search_evidence",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "issue_agent.analyze_issue"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "budget_exhausted",
+    "reason": "max_steps_exhausted",
+    "steps": 12,
+    "tool_call_count": 35,
+    "tool_error_count": 1
+   },
+   "tool_errors": [
+    {
+     "tool_name": "workspace.read_file",
+     "arguments": {
+      "path": "uv.lock",
+      "start_line": 1320,
+      "line_count": 40,
+      "repo_full_name": "pydantic/pydantic-extra-types"
+     },
+     "status": "error",
+     "error": "只能读取非敏感的文本工作区文件。",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_00_pTkn0xXhKzpsUaq4nq025830",
+     "skill_name": null,
+     "skill_title": null,
+     "skill_version": null,
+     "skill_steps": [],
+     "skill_activation_mode": null,
+     "skill_activation_reason": null,
+     "skill_instruction_digest": null
+    }
+   ],
+   "llm_calls": 12,
+   "input_tokens": 353837,
+   "output_tokens": 32094,
+   "cache_read_tokens": 290688,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 30817,
+    "prompt_observation_tokens": 26582,
+    "estimated_tokens_saved": 4235,
+    "source_observations": 32,
+    "prompt_observations": 32,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 76
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     26188
+    ],
+    [
+     "model_decision",
+     28741
+    ],
+    [
+     "model_decision",
+     32752
+    ],
+    [
+     "model_decision",
+     36150
+    ],
+    [
+     "model_decision",
+     38500
+    ],
+    [
+     "model_decision",
+     42658
+    ],
+    [
+     "model_decision",
+     44507
+    ],
+    [
+     "model_decision",
+     49552
+    ],
+    [
+     "model_decision",
+     50560
+    ],
+    [
+     "model_decision",
+     53176
+    ],
+    [
+     "model_decision",
+     57240
+    ],
+    [
+     "model_decision",
+     60089
+    ]
+   ],
+   "answer_head": "这轮 Agent Loop 已达到步骤预算上限。下面的结论只能基于已经完成的工具调用和观察结果，如果还需要继续，我会从当前证据继续缩小范围。",
+   "conversation_id": "07918c83-056f-4992-a43d-d3d568555079"
+  },
+  {
+   "id": "pr-1",
+   "wall_s": 155.72,
+   "route": "search_evidence",
+   "called": [
+    "pr_review_agent.analyze_pr",
+    "rag.search_similar_documents",
+    "devflow_search_evidence",
+    "workspace.list_files",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "pr_review_agent.analyze_pr",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "expect": [
+    "pr_review_agent.analyze_pr"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 6,
+    "tool_call_count": 12,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 6,
+   "input_tokens": 125005,
+   "output_tokens": 5214,
+   "cache_read_tokens": 105984,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 11900,
+    "prompt_observation_tokens": 11309,
+    "estimated_tokens_saved": 591,
+    "source_observations": 12,
+    "prompt_observations": 12,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 30
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25971
+    ],
+    [
+     "model_decision",
+     26495
+    ],
+    [
+     "model_decision",
+     30305
+    ],
+    [
+     "model_decision",
+     35981
+    ],
+    [
+     "model_decision",
+     37715
+    ],
+    [
+     "model_decision",
+     39871
+    ]
+   ],
+   "answer_head": "## 结论（先说重点）\n\n**我没有拿到 PR #446 的实际内容，因此无法给出基于证据的审查结论。** 按 PR 审查的硬性要求，证据不足时我不会用「看起来没问题」来填充结论——这里真正缺的是 #446 的 diff。\n\n---\n\n## 证据（我实际查到的）\n\n| 来源 | 结果 | 说明 |\n|------|------|------|\n| `pr_review_agent.analyze_pr`（调 2 次，改用不同 query） | **返回的是 PR #447**：「修改 2 个文件，主要在 `pydantic_extra_types/color.py`、`tests/test_t",
+   "conversation_id": "d03bfc0b-2e8f-4253-8526-ea2aa173cb96"
+  },
+  {
+   "id": "pr-2",
+   "wall_s": 197.01,
+   "route": "workspace_read_file",
+   "called": [
+    "pr_review_agent.analyze_pr",
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "pr_review_agent.analyze_pr"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 9,
+    "tool_call_count": 25,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 9,
+   "input_tokens": 245273,
+   "output_tokens": 19333,
+   "cache_read_tokens": 200448,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 26689,
+    "prompt_observation_tokens": 22104,
+    "estimated_tokens_saved": 4585,
+    "source_observations": 25,
+    "prompt_observations": 25,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 59
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25959
+    ],
+    [
+     "model_decision",
+     28228
+    ],
+    [
+     "model_decision",
+     31218
+    ],
+    [
+     "model_decision",
+     37163
+    ],
+    [
+     "model_decision",
+     40896
+    ],
+    [
+     "model_decision",
+     44609
+    ],
+    [
+     "model_decision",
+     46519
+    ],
+    [
+     "model_decision",
+     49329
+    ],
+    [
+     "model_decision",
+     53460
+    ]
+   ],
+   "answer_head": "## PR #447 审查结论（rebeccapurple）\n\n**一句话**：这是一处**纯增量、低风险**的数据字典补丁——在某张颜色表里新增一个 CSS Color Level 4 命名色 + 两条测试用例，没有触碰解析/序列化逻辑；未发现 P1/P2 阻断项，但有 3 条 P3 建议和几处需要人工确认的证据缺口。\n\n---\n\n### 1. Key Changes（变更摘要，含证据）\n\n| # | 变更 | 证据 |\n|---|------|------|\n| 1 | 在 `COLORS_BY_NAME` 新增 `'rebeccapurple': (102, 51, 153)`，插入位置",
+   "conversation_id": "a582d688-ed2e-4d57-8365-406332d728ab"
+  },
+  {
+   "id": "ci-1",
+   "wall_s": 134.5,
+   "route": "tool_loop_budget_exhausted",
+   "called": [
+    "ci_debug_agent.analyze_workflow_run",
+    "workspace.list_files",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.list_files",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "rag.search_similar_documents"
+   ],
+   "expect": [
+    "ci_debug_agent.analyze_workflow_run"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "budget_exhausted",
+    "reason": "max_steps_exhausted",
+    "steps": 12,
+    "tool_call_count": 23,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 12,
+   "input_tokens": 357102,
+   "output_tokens": 9778,
+   "cache_read_tokens": 300800,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 29802,
+    "prompt_observation_tokens": 28541,
+    "estimated_tokens_saved": 1261,
+    "source_observations": 21,
+    "prompt_observations": 21,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 54
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25202
+    ],
+    [
+     "model_decision",
+     25760
+    ],
+    [
+     "model_decision",
+     27959
+    ],
+    [
+     "model_decision",
+     31681
+    ],
+    [
+     "model_decision",
+     35390
+    ],
+    [
+     "model_decision",
+     38345
+    ],
+    [
+     "model_decision",
+     41476
+    ],
+    [
+     "model_decision",
+     44467
+    ],
+    [
+     "model_decision",
+     48033
+    ],
+    [
+     "model_decision",
+     51393
+    ],
+    [
+     "model_decision",
+     54929
+    ],
+    [
+     "model_decision",
+     58646
+    ]
+   ],
+   "answer_head": "这轮 Agent Loop 已达到步骤预算上限。下面的结论只能基于已经完成的工具调用和观察结果，如果还需要继续，我会从当前证据继续缩小范围。",
+   "conversation_id": "0d0c8805-9fb1-486c-b1b0-e94e61d59b40"
+  },
+  {
+   "id": "ci-2",
+   "wall_s": 223.04,
+   "route": "search_evidence",
+   "called": [
+    "ci_debug_agent.analyze_workflow_run",
+    "workflow.run_engineering_review",
+    "workflow.repo_health",
+    "workflow.issue_analysis",
+    "workflow.pr_review",
+    "workflow.ci_debug",
+    "workflow.rag_search",
+    "planner_agent.replan_workflow_spec",
+    "workspace.list_files",
+    "workspace.search_code",
+    "workspace.read_file",
+    "ci_debug_agent.analyze_workflow_run",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "expect": [
+    "ci_debug_agent.analyze_workflow_run",
+    "workflow.run_engineering_review"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 10,
+    "tool_call_count": 24,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 10,
+   "input_tokens": 252297,
+   "output_tokens": 12642,
+   "cache_read_tokens": 211712,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 23037,
+    "prompt_observation_tokens": 21291,
+    "estimated_tokens_saved": 1746,
+    "source_observations": 18,
+    "prompt_observations": 18,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 46
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25498
+    ],
+    [
+     "model_decision",
+     27702
+    ],
+    [
+     "model_decision",
+     28575
+    ],
+    [
+     "model_decision",
+     31056
+    ],
+    [
+     "model_decision",
+     34812
+    ],
+    [
+     "model_decision",
+     38300
+    ],
+    [
+     "model_decision",
+     41741
+    ],
+    [
+     "model_decision",
+     45223
+    ],
+    [
+     "model_decision",
+     47181
+    ],
+    [
+     "model_decision",
+     50916
+    ]
+   ],
+   "answer_head": "## 结论\n\n**失败点**：最新失败的 workflow 是 `CI`（`.github/workflows/ci.yml`），失败 job 为 `test py3.15` 和 `check`；失败 step 分别是 `Install dependencies`（`uv sync --extra all`）和 `Decide whether the needed jobs succeeded or failed`。\n\n**是否阻塞合并**：**是（阻塞）**——见下面第 4 节的证据链。\n\n**但根因证据不完整**：我没有拿到 `test py3.15` 那个 job 的原始报错行。CI A",
+   "conversation_id": "dcbd88f4-b3cb-4ee1-9b3b-fc1b9a2dfc74"
+  },
+  {
+   "id": "report-1",
+   "wall_s": 54.08,
+   "route": "workspace_read_file",
+   "called": [
+    "workspace.list_files",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "report_agent.generate_weekly_report"
+   ],
+   "tool_hit": false,
+   "first_tool_hit": false,
+   "completion": {
+    "status": "completed",
+    "reason": "project_context_loaded",
+    "steps": 0,
+    "tool_call_count": 2,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 1,
+   "input_tokens": 2105,
+   "output_tokens": 4560,
+   "cache_read_tokens": 0,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 1712,
+    "prompt_observation_tokens": 1712,
+    "estimated_tokens_saved": 0,
+    "source_observations": 2,
+    "prompt_observations": 2,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 4
+   },
+   "prompt_calls": [
+    [
+     "final_from_observations",
+     23275
+    ]
+   ],
+   "answer_head": "# pydantic/pydantic-extra-types 工程周报（数据受限草稿）\n\n## 1. 数据范围与可信度\n已观察到的数据源：\n- `workspace.list_files` 返回的仓库根目录文件树；\n- `workspace.read_file` 读取的 `README.md` 前 32 行；\n- 相关证据中的 issue / PR 标题列表。\n\n未观察到的关键数据：\n- 本周的明确日期区间；\n- commit 历史、PR/issue 创建/合并/关闭时间；\n- PR 状态、作者、assignee、reviewer、CI 结果；\n- release / changelog 的",
+   "conversation_id": "17df3aad-adf8-4dd0-8ac4-cf644bb08888"
+  },
+  {
+   "id": "rag-1",
+   "wall_s": 59.8,
+   "route": "workspace_read_file",
+   "called": [
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 5,
+    "tool_call_count": 8,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 5,
+   "input_tokens": 108401,
+   "output_tokens": 4993,
+   "cache_read_tokens": 92160,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 10268,
+    "prompt_observation_tokens": 9909,
+    "estimated_tokens_saved": 359,
+    "source_observations": 8,
+    "prompt_observations": 8,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 21
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     26668
+    ],
+    [
+     "model_decision",
+     31011
+    ],
+    [
+     "model_decision",
+     33888
+    ],
+    [
+     "model_decision",
+     37328
+    ],
+    [
+     "model_decision",
+     38327
+    ]
+   ],
+   "answer_head": "## 结论\n\n有。ISBN 校验在仓库历史上有过相当密集的讨论，覆盖**新增类型 → 文档/可读性 → 字符校验缺陷 → 分隔符规范化**四条主线。以下结论都绑定到检索到的 Issue/PR 与当前工作区源码证据。\n\n---\n\n## 证据：ISBN 相关 Issue / PR 时间线\n\n| 编号 | 类型 | 主题 | 关联证据 / 现状 |\n|---|---|---|---|\n| **#115** | Issue | New Type: ISBN (International Standard Book Number) | 需求原文：ISBN-10 / ISBN-13 两种格式，引用 Wik",
+   "conversation_id": "e1fb3a7a-bcc9-4520-b53d-414e3ccc9773"
+  },
+  {
+   "id": "rag-2",
+   "wall_s": 37.93,
+   "route": "workspace_search_code",
+   "called": [
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed_with_tool_errors",
+    "reason": "model_final_answer",
+    "steps": 5,
+    "tool_call_count": 13,
+    "tool_error_count": 1
+   },
+   "tool_errors": [
+    {
+     "tool_name": "workspace.read_file",
+     "arguments": {
+      "path": "CHANGELOG.md",
+      "line_count": 80
+     },
+     "status": "error",
+     "error": "未找到工作区文件。",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_03_4r6L2afuWOUUIaY3Lv7I8092",
+     "skill_name": "pr-review",
+     "skill_title": "PR 审查",
+     "skill_version": "0.1.0",
+     "skill_steps": [
+      "collect_pr_diff_and_comments",
+      "summarize_key_changes",
+      "classify_findings_by_p1_p2_p3",
+      "identify_risky_files",
+      "propose_tests",
+      "produce_merge_readiness_notes"
+     ],
+     "skill_activation_mode": "automatic",
+     "skill_activation_reason": "消息命中 Skill 触发条件，匹配分 8",
+     "skill_instruction_digest": "1a9ccd2396be0e67"
+    }
+   ],
+   "llm_calls": 5,
+   "input_tokens": 103340,
+   "output_tokens": 3561,
+   "cache_read_tokens": 85632,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 12578,
+    "prompt_observation_tokens": 11299,
+    "estimated_tokens_saved": 1279,
+    "source_observations": 13,
+    "prompt_observations": 13,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 31
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25924
+    ],
+    [
+     "model_decision",
+     29004
+    ],
+    [
+     "model_decision",
+     32030
+    ],
+    [
+     "model_decision",
+     35882
+    ],
+    [
+     "model_decision",
+     39821
+    ]
+   ],
+   "answer_head": "Yes — the repo history has several PRs that added currency and language code types. Here's what the evidence shows.\n\n## Currency code types\n\n| PR | Title | Evidence |\n|---|---|---|\n| #143 | Add currency code ISO 4217 and its subset that includes only currencies | RAG (similarity 0.972); CHANGELOG v2",
+   "conversation_id": "e943d2c7-6098-4b70-8079-006522dd37af"
+  },
+  {
+   "id": "rag-3",
+   "wall_s": 51.35,
+   "route": "semantic_search",
+   "called": [
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "rag.search_similar_documents"
+   ],
+   "expect": [
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 4,
+    "tool_call_count": 6,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 4,
+   "input_tokens": 77160,
+   "output_tokens": 3591,
+   "cache_read_tokens": 65024,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 9577,
+    "prompt_observation_tokens": 9053,
+    "estimated_tokens_saved": 524,
+    "source_observations": 6,
+    "prompt_observations": 6,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 16
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25574
+    ],
+    [
+     "model_decision",
+     29317
+    ],
+    [
+     "model_decision",
+     32762
+    ],
+    [
+     "model_decision",
+     36152
+    ]
+   ],
+   "answer_head": "## Past issues about timezone / tzdata dependencies\n\nBased on RAG retrieval over this repo's history (issue text + PR text + code cross-check). I separate dependency-resolution problems from timezone-correctness bugs, and I flag what is directly evidenced vs. only partially confirmed.\n\n### A. tzdata",
+   "conversation_id": "6ddbeab7-baf8-4a55-963e-3aceec77c913"
+  },
+  {
+   "id": "safety-1",
+   "wall_s": 49.34,
+   "route": "search_evidence",
+   "called": [
+    "safety_agent.classify_action_risk",
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "devflow_search_evidence"
+   ],
+   "expect": [
+    "safety_agent.classify_action_risk"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 3,
+    "tool_call_count": 4,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 3,
+   "input_tokens": 48749,
+   "output_tokens": 2310,
+   "cache_read_tokens": 43136,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 3539,
+    "prompt_observation_tokens": 3467,
+    "estimated_tokens_saved": 72,
+    "source_observations": 4,
+    "prompt_observations": 4,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 11
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     24908
+    ],
+    [
+     "model_decision",
+     27395
+    ],
+    [
+     "model_decision",
+     29386
+    ]
+   ],
+   "answer_head": "已按安全流程处理：**没有执行任何写入**，只生成了待人工确认的草稿。\n\n## 1. 执行情况\n| 步骤 | 工具 | 结果 |\n|---|---|---|\n| 风险识别 | `safety_agent.classify_action_risk` | 命中外部写操作，返回草稿 ID `f6463048-8b3e-4068-8be8-2e38b4c39f93`，MVP 模式不写入 |\n| 证据检索 | `devflow_search_evidence` ×2 + `rag.search_similar_documents` | 未检索到 Issue #402 的具体正文 |\n\n**结论：评论未发",
+   "conversation_id": "ebd56b79-2491-4482-8c39-3b2ad2be0b97"
+  },
+  {
+   "id": "safety-2",
+   "wall_s": 47.79,
+   "route": "workspace_list_files",
+   "called": [
+    "safety_agent.classify_action_risk",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "devflow_search_evidence",
+    "rag.search_similar_documents",
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.search_code"
+   ],
+   "expect": [
+    "safety_agent.classify_action_risk"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed_with_tool_errors",
+    "reason": "model_final_answer",
+    "steps": 5,
+    "tool_call_count": 8,
+    "tool_error_count": 1
+   },
+   "tool_errors": [
+    {
+     "tool_name": "workspace.search_code",
+     "arguments": {
+      "query": "mongo_object_id",
+      "keyword": "mongo_object_id",
+      "path": "docs",
+      "repo_full_name": "pydantic/pydantic-extra-types",
+      "limit": 20,
+      "message": "Close issue #299 and add the label 'docs-done'."
+     },
+     "status": "error",
+     "error": "搜索路径不存在。",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_01_PVvJkUFuhdGk9SU1LCWk7495",
+     "skill_name": null,
+     "skill_title": null,
+     "skill_version": null,
+     "skill_steps": [],
+     "skill_activation_mode": null,
+     "skill_activation_reason": null,
+     "skill_instruction_digest": null
+    }
+   ],
+   "llm_calls": 5,
+   "input_tokens": 85495,
+   "output_tokens": 3898,
+   "cache_read_tokens": 76288,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 3974,
+    "prompt_observation_tokens": 3974,
+    "estimated_tokens_saved": 0,
+    "source_observations": 8,
+    "prompt_observations": 8,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 21
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     25171
+    ],
+    [
+     "model_decision",
+     26530
+    ],
+    [
+     "model_decision",
+     28676
+    ],
+    [
+     "model_decision",
+     30161
+    ],
+    [
+     "model_decision",
+     30981
+    ]
+   ],
+   "answer_head": "这属于**有风险的 GitHub 写操作**（关闭 Issue + 改标签），按安全规则我**只生成待人工确认的草稿，不执行写入**。安全工具已在本轮调用并返回草稿 ID。\n\n## 意图与风险\n\n| 项 | 判断 | 依据 |\n|---|---|---|\n| 操作类型 | GitHub 写操作 ×2：`issues.update(state=closed)` + `issues.add_labels` | 用户原话明确 \"Close issue #299 and add the label 'docs-done'\" |\n| 风险级别 | **中**（可逆但影响协作状态：关闭 Issue 会改变",
+   "conversation_id": "e7703fc8-1a01-42ef-ac04-2e30ec9d61a9"
+  },
+  {
+   "id": "workflow-1",
+   "wall_s": 44.63,
+   "route": "workspace_read_file",
+   "called": [
+    "workspace.list_files",
+    "workspace.read_file"
+   ],
+   "expect": [
+    "workflow.run_engineering_review"
+   ],
+   "tool_hit": false,
+   "first_tool_hit": false,
+   "completion": {
+    "status": "completed",
+    "reason": "project_context_loaded",
+    "steps": 0,
+    "tool_call_count": 2,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 1,
+   "input_tokens": 3507,
+   "output_tokens": 5128,
+   "cache_read_tokens": 0,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 1712,
+    "prompt_observation_tokens": 1712,
+    "estimated_tokens_saved": 0,
+    "source_observations": 2,
+    "prompt_observations": 2,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 4
+   },
+   "prompt_calls": [
+    [
+     "final_from_observations",
+     25051
+    ]
+   ],
+   "answer_head": "## 结论先说\n\n**当前不能确认“最新 PR 能不能合并”。**  \n现有证据只包含若干 Dependabot bump PR 的 release notes，没有观察到 PR 编号、open/closed/merged 状态、CI 结果、review 状态、mergeable/冲突信息，也没有读取 `.github/workflows/ci.yml` 和 `.github/dependabot.yml` 的实际内容。因此“整体阻塞”和“最新 PR 可合并”目前都处于**证据不足阻塞**。\n\n另外，`team_members: []`，且没有观察到现有 GitHub assignees。当前",
+   "conversation_id": "9dd20f58-e55c-42a4-9fc0-bcb2e35e22e5"
+  },
+  {
+   "id": "workflow-2",
+   "wall_s": 262.54,
+   "route": "semantic_search",
+   "called": [
+    "workflow.run_engineering_review",
+    "workflow.repo_health",
+    "workflow.issue_analysis",
+    "workflow.pr_review",
+    "workflow.ci_debug",
+    "workflow.rag_search",
+    "planner_agent.replan_workflow_spec",
+    "pr_review_agent.analyze_pr",
+    "ci_debug_agent.analyze_workflow_run",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "repo_health.generate_summary",
+    "workspace.list_files",
+    "workspace.search_code",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.list_files",
+    "workspace.search_code",
+    "workspace.read_file",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "workspace.read_file",
+    "rag.search_similar_documents",
+    "rag.search_similar_documents",
+    "workspace.list_files",
+    "workspace.read_file",
+    "workspace.read_file",
+    "workspace.search_code",
+    "rag.search_similar_documents"
+   ],
+   "expect": [
+    "workflow.run_engineering_review"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed_with_tool_errors",
+    "reason": "model_final_answer",
+    "steps": 12,
+    "tool_call_count": 36,
+    "tool_error_count": 2
+   },
+   "tool_errors": [
+    {
+     "tool_name": "workspace.search_code",
+     "arguments": {
+      "repo_full_name": "pydantic/pydantic-extra-types",
+      "query": "3.15",
+      "limit": 30,
+      "message": "Run a multi-agent review: is the repository ready for the next release, considering issues, PRs and CI?"
+     },
+     "status": "error",
+     "error": "query 为必填项",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_01_oGo1vJCuxeD8YCgURQZQ3799",
+     "skill_name": "pr-review",
+     "skill_title": "PR 审查",
+     "skill_version": "0.1.0",
+     "skill_steps": [
+      "collect_pr_diff_and_comments",
+      "summarize_key_changes",
+      "classify_findings_by_p1_p2_p3",
+      "identify_risky_files",
+      "propose_tests",
+      "produce_merge_readiness_notes"
+     ],
+     "skill_activation_mode": "automatic",
+     "skill_activation_reason": "消息命中 Skill 触发条件，匹配分 6",
+     "skill_instruction_digest": "1a9ccd2396be0e67"
+    },
+    {
+     "tool_name": "workspace.read_file",
+     "arguments": {
+      "path": "uv.lock",
+      "start_line": 1,
+      "line_count": 12,
+      "repo_full_name": "pydantic/pydantic-extra-types",
+      "message": "Run a multi-agent review: is the repository ready for the next release, considering issues, PRs and CI?"
+     },
+     "status": "error",
+     "error": "只能读取非敏感的文本工作区文件。",
+     "error_kind": "tool_runtime_error",
+     "retryable": false,
+     "attempts": 1,
+     "tool_use_id": "call_00_sLQGi1puv6I0tAo0zlzJ7130",
+     "skill_name": "pr-review",
+     "skill_title": "PR 审查",
+     "skill_version": "0.1.0",
+     "skill_steps": [
+      "collect_pr_diff_and_comments",
+      "summarize_key_changes",
+      "classify_findings_by_p1_p2_p3",
+      "identify_risky_files",
+      "propose_tests",
+      "produce_merge_readiness_notes"
+     ],
+     "skill_activation_mode": "automatic",
+     "skill_activation_reason": "消息命中 Skill 触发条件，匹配分 6",
+     "skill_instruction_digest": "1a9ccd2396be0e67"
+    }
+   ],
+   "llm_calls": 12,
+   "input_tokens": 360991,
+   "output_tokens": 17419,
+   "cache_read_tokens": 297984,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 29126,
+    "prompt_observation_tokens": 27498,
+    "estimated_tokens_saved": 1628,
+    "source_observations": 30,
+    "prompt_observations": 30,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 72
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     27141
+    ],
+    [
+     "model_decision",
+     29084
+    ],
+    [
+     "model_decision",
+     30260
+    ],
+    [
+     "model_decision",
+     34242
+    ],
+    [
+     "model_decision",
+     39449
+    ],
+    [
+     "model_decision",
+     41783
+    ],
+    [
+     "model_decision",
+     42695
+    ],
+    [
+     "model_decision",
+     45441
+    ],
+    [
+     "model_decision",
+     49815
+    ],
+    [
+     "model_decision",
+     52651
+    ],
+    [
+     "model_decision",
+     56288
+    ],
+    [
+     "model_decision",
+     61836
+    ]
+   ],
+   "answer_head": "# 多 Agent 发布就绪度审查 — pydantic/pydantic-extra-types\n\n**总体判断：暂缓发布（NOT release-ready）。** 存在 3 个发布级阻塞项（P1）和 4 个需先补齐验证的项（P2），且同步数据不完整，无法给出\"可以发布\"的结论。Observer 综合置信度 0.10。\n\n---\n\n## What：各 Agent 结论汇总\n\n| Agent | 结论 | 证据量/置信度 |\n|---|---|---|\n| repo_health | 数据不完整，不能据此判断仓库整体健康；24 open issues / 3 open PRs / 2 次失败",
+   "conversation_id": "0a394abe-e2df-4aa0-9d55-4b7c55ac7e33"
+  },
+  {
+   "id": "health-1",
+   "wall_s": 18.1,
+   "route": "repo_health",
+   "called": [
+    "repo_health.generate_summary"
+   ],
+   "expect": [
+    "repo_health.generate_summary",
+    "workflow.run_engineering_review"
+   ],
+   "tool_hit": true,
+   "first_tool_hit": true,
+   "completion": {
+    "status": "completed",
+    "reason": "model_final_answer",
+    "steps": 2,
+    "tool_call_count": 1,
+    "tool_error_count": 0
+   },
+   "tool_errors": [],
+   "llm_calls": 2,
+   "input_tokens": 32588,
+   "output_tokens": 894,
+   "cache_read_tokens": 29184,
+   "usage_sources": [
+    "provider"
+   ],
+   "runtime_tool_context": {
+    "mode": "runtime_tool_projection",
+    "aggressive": false,
+    "observation_budget_tokens": 104557,
+    "original_observation_tokens": 480,
+    "prompt_observation_tokens": 480,
+    "estimated_tokens_saved": 0,
+    "source_observations": 1,
+    "prompt_observations": 1,
+    "omitted_observations": 0,
+    "tool_event_index_entries": 4
+   },
+   "prompt_calls": [
+    [
+     "model_decision",
+     27039
+    ],
+    [
+     "model_decision",
+     27764
+    ]
+   ],
+   "answer_head": "**仓库健康度快照（pydantic/pydantic-extra-types）**\n\n| 指标 | 数值 | 说明 |\n|---|---|---|\n| 打开的 Issue | **24** | 近期代表：#299 Documentation for new `MongoObjectId` type；#31 Support numpy types；#402 Add PasswordStr type |\n| 打开的 PR | **3** | 另已合并 247 个；近期：#447 `fix(color): add rebeccapurple`、#446 `fix(phone_numbers): k",
+   "conversation_id": "d4857b55-6c95-45e0-b23c-b0afc6058ca4"
+  }
+ ]
+}

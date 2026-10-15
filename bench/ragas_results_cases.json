@@ -1,0 +1,322 @@
+[
+ {
+  "question": "Why do some Unicode numeral values pass bank routing checksum validation but then fail when converted to an integer?",
+  "reference": "PR #403 fixes this by rejecting non-ASCII ABA routing digits: `str.isdigit()` accepts Unicode numerals, so some non-ASCII values passed checksum validation while others leaked an `int()` conversion error. The fix validates ASCII decimal digits up front and adds regression coverage.",
+  "expected_source_ids": [
+   "88e4345e-c750-40e6-a6a2-01911ef2c6ec"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-403-semantic"
+ },
+ {
+  "question": "Why should a lowercase currency code like eur be accepted and automatically converted to uppercase instead of being rejected?",
+  "reference": "According to pull request #236 (\"lower case currency is valid\"), a lowercase currency code such as \"eur\" should be accepted and stored as \"EUR\" rather than rejected. The PR argues this mirrors the common convention where any date in a string is accepted and automatically converted to a datetime object. In other words, currency input should be normalized (lowercase to uppercase) rather than treated as invalid.",
+  "expected_source_ids": [
+   "a5c5ecc8-5128-4cfa-9199-2547fa5d0e9e"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-236-semantic"
+ },
+ {
+  "question": "Why are coordinate and schema validation tests failing because regex constraints are missing from anticipated JSON output after a Pydantic update?",
+  "reference": "According to pull request #358, the test_json_schema function in tests/test_coordinate.py and tests/test_json_schema.py has been failing since the feature introduced in the pydantic commit 4057cd2. The PR addresses this by adding regex patterns to the expected JSON schema for test_json_schema.",
+  "expected_source_ids": [
+   "6ca02001-dd48-4a01-9ee2-b3c88ab60a56"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-358-semantic"
+ },
+ {
+  "question": "Where can I find detailed documentation and code samples for the PhoneNumber type, covering default changes and validator usage?",
+  "reference": "Detailed documentation and code samples for the PhoneNumber type can be found in pull request #341, which enhances the docstring for the PhoneNumber class. The PR adds usage examples demonstrating normal usage, subclassing for default changes, and using the provided validator annotation. It also closes issue #107.",
+  "expected_source_ids": [
+   "f174420c-ada2-42f1-ac58-40a5e7f883ec"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-341-semantic"
+ },
+ {
+  "question": "How can I fix the code examples in the phone number parsing library's documentation so they are properly indented and use correct comment syntax?",
+  "reference": "Pull request #347 fixes the PhoneNumber documentation examples by correcting indentation and replacing the incorrect comment markers (`>> ...`) with the correct `# > ...` syntax. These formatting issues had caused code examples to fail when copied directly from the docs. With this update, the examples are consistent, clear, and executable as intended, improving documentation reliability and usability.",
+  "expected_source_ids": [
+   "28a19abc-28d9-4d1f-b713-571d7746308c"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-347-semantic"
+ },
+ {
+  "question": "Is there an option for pydantic's Color serialization to always produce six-digit hex codes rather than shortening #ff0000 to #f00?",
+  "reference": "No, based on GitHub issue #66, pydantic's Color does not currently have an option to force six-digit hex output—calling `as_hex()` on `Color(\"red\")` returns the compressed `#f00` rather than `#ff0000`. Issue #66 is a feature request proposing an optional parameter such as `as_hex(format=\"long\")` to produce non-compressed six-character hex values, which the author notes they currently work around with a custom conversion function.",
+  "expected_source_ids": [
+   "b12436fb-d7a0-4935-a7db-f37ac8a7d29b"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-66-semantic"
+ },
+ {
+  "question": "Why does the Pendulum 3 upgrade cause an AttributeError when code tries to call instance from the DateTime class?",
+  "reference": "Issue #232 reports that `DateTime.instance` causes a `type object 'DateTime' has no attribute 'instance'` error. The reason is that `instance()` appears to be a top-level pendulum method and is not available on the `DateTime` class directly; Pendulum 1.5.1 was the last version that supported `DateTime.instance`, while this package depends on Pendulum 3.0.0.",
+  "expected_source_ids": [
+   "044ee3c1-9fba-4e90-ac30-3dcd9c3a5500"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-232-semantic"
+ },
+ {
+  "question": "Why do integer or missing values passed to ISBN, IBAN, and MAC address fields crash with TypeError instead of a validation error?",
+  "reference": "In pull request #408, the ISBN, IBAN, and MacAddress types register `_validate` as a before validator, so it runs ahead of `str_schema()` on the raw input and then calls str-only methods (e.g. `len()`, `.replace()`, `.encode()`) on non-strings like ints or None, letting a TypeError/AttributeError escape instead of raising `ValidationError`. Unlike `DomainStr`, which annotates its input as `Any` and explicitly raises `PydanticCustomError` for non-strings, these three annotate it as `str` and omit the check. The fix applies the `DomainStr` pattern (isinstance check plus a type error), matching the contract already asserted by `test_isin_requires_string` for after-validators, while leaving return types unchanged.",
+  "expected_source_ids": [
+   "9497e06b-237a-467a-8185-a56dfa0a1147"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-408-semantic"
+ },
+ {
+  "question": "Why are the pydantic color type unit tests failing after a recent commit, and how should they be fixed?",
+  "reference": "PR #26 fixes the failing `color` type unit tests that appeared after commit b5b0daab6bc45314ea41ccceaaf007bf41a71271. That commit changed pydantic’s validator discovery to rely on a `__get_validators__` hook, which the `Color` type did not implement, so the tests could not use `Color` as a valid pydantic field; the fix adds the `__get_validators__` classmethod to `Color` (yielding its validator) so the color type is recognized and validated correctly.",
+  "expected_source_ids": [
+   "7190b0d3-389d-4a75-a3b4-ca522f23beaf"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-26-semantic"
+ },
+ {
+  "question": "How do I fix JSON schema serialization for a custom Pydantic field representing MongoDB ObjectId?",
+  "reference": "PR #151 adds a new Pydantic ObjectIdField for MongoDB (addressing issue #133), but the author reports that while validation works, Something.model_json_schema(mode=\"serialization\") still has problems. The PR does not include a documented fix; it asks reviewers to inspect the code and suggest changes for the serialization/testing issues.",
+  "expected_source_ids": [
+   "b2e06870-162e-499b-9ecb-a8f5915ef249"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-151-semantic"
+ },
+ {
+  "question": "How can I add built-in pydantic types for ISO week, week-date, and ordinal date string formats, possibly with compact versions without dashes?",
+  "reference": "Issue #94 proposes adding built-in pydantic types for ISO Week (YYYY-WNN), ISO Week Date (YYYY-WNN-D), and Ordinal Date (YYYY-DDD) formats. The requester provides a pseudo-implementation using `Annotated[str, StringConstraints(pattern=...)]` with regex patterns for each format, and suggests each type could also have a compact dashless version (YYYYWNN, YYYYWNND, YYYYDDD). The issue notes the patterns aren't 100% correct (e.g. not every year has 53 weeks or 366 days) but that Python's datetime module handles such cases, and the requester offers to open a PR.",
+  "expected_source_ids": [
+   "efa1bc48-b2fc-47bc-a86c-f963bb068205"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-94-semantic"
+ },
+ {
+  "question": "Where can I find documentation examples for pydantic's PaymentCardNumber and Color field types?",
+  "reference": "Documentation examples for pydantic's `PaymentCardNumber` and `Color` field types are added in GitHub pull request #50, titled “📝 Add documentation for `Color` and `PaymentCardNumber`.” The PR follows the same idea as an existing example in the pydantic settings documentation.",
+  "expected_source_ids": [
+   "01a1cd6e-72fc-4120-bc4d-e3c9c9fa7c48"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-50-semantic"
+ },
+ {
+  "question": "Why does pydantic-extra-types pin python-ulid to version 1.x when version 2.x only drops Python 3.7 and 3.8 support?",
+  "reference": "Issue #130 requests support for python-ulid 2.x. The dependency was pinned to >=1,<2 in PR #73, even though the latest release was already 2.2.0 and its only breaking change was dropping Python 3.7 and 3.8 support. Therefore, the project should not need to pin the old version on Python 3.9 and later.",
+  "expected_source_ids": [
+   "86d4b8f8-34e2-476b-8e85-c9a45d423b62"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-130-semantic"
+ },
+ {
+  "question": "How can I configure a per-model region code and output format for PhoneNumber fields in pydantic-extra-types without changing global settings?",
+  "reference": "Issue #107 asks how to set a per-model region code and output format for PhoneNumber, noting the docs provide no example for overriding defaults. It points out that the workaround PhoneNumber.phone_format = 'E164' applies globally and would be overridden, so the issue requests the correct per-model approach; no solution is given in the issue text.",
+  "expected_source_ids": [
+   "f32d4b6c-b0de-4f95-89b5-ea2c3d571acc"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-107-semantic"
+ },
+ {
+  "question": "I need a Pydantic field type that accepts only valid domain names, rejecting full URLs with schemes or file paths.",
+  "reference": "Issue #211 requests adding a DomainStr type to validate domains. The proposed implementation is Annotated[str, StringConstraints(strip_whitespace=True, to_lower=True, min_length=1, max_length=253, pattern=...)] with a regex requiring dot-separated alphanumeric/hyphen labels; it accepts google.com, x.com, and www.a.co but raises ValidationError for https://google.com and file:///etc/passwd.",
+  "expected_source_ids": [
+   "4203849b-49e7-480c-9a77-a97a462d77b8"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-211-semantic"
+ },
+ {
+  "question": "How can pydantic-extra-types be integrated with Hypothesis so generated strategies work for its custom field types?",
+  "reference": "Per issue #34 (\"Add hypothesis plugin\"), because pydantic-extra-types is a separate package, the existing Hypothesis plugin for pydantic will not work for its custom types. Rather than creating a separate plugin, the issue proposes adding support for pydantic-extra-types to the pydantic Hypothesis plugin as part of pydantic/pydantic#4682.",
+  "expected_source_ids": [
+   "5fe33edc-5986-46da-9057-339fbddbc71f"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-34-semantic"
+ },
+ {
+  "question": "Why does the scheduled next run test for cron expressions fail when executed on the last day of December?",
+  "reference": "Per PR #361 (“🐛 fix Cron Tests (Happy New Year 🎉 )”), `tests.test_cron.test_cron_str_next_after` fails on Dec 31 because the next invocation is actually in the new year, breaking the test’s expectation. The PR modifies the test to handle the case of being run on Dec 31.",
+  "expected_source_ids": [
+   "e1407c00-63e0-48c1-a310-0665fff0fb76"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-361-semantic"
+ },
+ {
+  "question": "Why does the timezone type reject abbreviations such as EDT while allowing EST inconsistently across platforms, and how to fix it?",
+  "reference": "The TimeZoneName validator rejects abbreviations like EDT while inconsistently accepting EST because zoneinfo.available_timezones() includes some abbreviations (such as EST) but not others (such as EDT) in a platform-dependent way. Pull request #376 fixes this by adding a comprehensive set of common timezone abbreviations (EST, EDT, CST, CDT, MST, MDT, PST, PDT, etc.) to the allowed timezone values. It also adds a test verifying these abbreviations are accepted.",
+  "expected_source_ids": [
+   "743b0978-60c2-4d75-962e-4348a680d2ae"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-376-semantic"
+ },
+ {
+  "question": "How can we validate all ISO 639-3 language codes when the current pycountry dependency omits valid entries like Emiliano-Romagnolo?",
+  "reference": "In issue #356, the reporter notes that pydantic-extra-types validates ISO 639-3 codes via pycountry.languages (pydantic_extra_types/language_code.py:239), but pycountry 24.6.1 is incomplete and omits valid codes such as eml (Emiliano-Romagnolo). Since pycountry won't accept data changes (it is a wrapper around Debian's pkg-isocodes), the reporter suggests switching to iso639-lang to validate all ISO 639-3 language codes.",
+  "expected_source_ids": [
+   "bbae96ac-d219-4a8a-b807-047e24aa55a1"
+  ],
+  "source_type": "issue",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "issue-356-semantic"
+ },
+ {
+  "question": "Why is the documented import path for script codes incorrectly pointing to the language code module instead?",
+  "reference": "PR #349 fixes a documentation typo where the script code docs incorrectly showed importing from `pydantic_extra_types.language_code`. The documented import should be from `pydantic_extra_types.script_code`, not the language code module.",
+  "expected_source_ids": [
+   "6a281221-d096-4498-a359-3dd1fd65d3b8"
+  ],
+  "source_type": "pull_request",
+  "required_tools": [],
+  "expected_tool_calls": [],
+  "kind": "positive",
+  "must_include": [],
+  "must_not_include": [],
+  "answer_regex": null,
+  "source_file": null,
+  "id": "pull_request-349-semantic"
+ }
+]

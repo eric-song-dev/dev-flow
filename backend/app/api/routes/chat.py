@@ -777,7 +777,7 @@ def _build_engineering_workflow_runtime(
                 "body": pull_request.body,
                 "state": pull_request.state,
                 "author": pull_request.author,
-                "merged_at": pull_request.merged_at,
+                "merged_at": pull_request.merged_at.isoformat() if pull_request.merged_at else None,
                 "files": [
                     {
                         "filename": file.filename,

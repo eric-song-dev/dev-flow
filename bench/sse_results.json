@@ -1,0 +1,79 @@
+[
+ {
+  "prompt": "Color 类型是怎么解析 hex 颜色字符串的？给出对应源码位置。",
+  "events": 127,
+  "first_event": 2.16,
+  "first_thought": 2.16,
+  "first_tool_use": 2.16,
+  "first_tool_result": 2.21,
+  "first_action": 2.21,
+  "first_observation": 2.21,
+  "first_delta": 35.4,
+  "first_final": 54.39,
+  "total": 54.39
+ },
+ {
+  "prompt": "Where is the phone number validator impl",
+  "events": 104,
+  "first_event": 2.28,
+  "first_thought": 2.28,
+  "first_tool_use": 2.28,
+  "first_tool_result": 2.3,
+  "first_action": 2.3,
+  "first_observation": 2.3,
+  "first_delta": 16.44,
+  "first_final": 28.56,
+  "total": 28.56
+ },
+ {
+  "prompt": "历史上有没有讨论过 ISBN 校验相关的 Issue 或 PR？",
+  "events": 112,
+  "first_event": 2.57,
+  "first_thought": 2.57,
+  "first_tool_use": 2.57,
+  "first_tool_result": 2.67,
+  "first_action": 2.67,
+  "first_observation": 2.67,
+  "first_delta": 27.07,
+  "first_final": 58.96,
+  "total": 58.96
+ },
+ {
+  "prompt": "Which past issues discussed problems wit",
+  "events": 79,
+  "first_event": 3.04,
+  "first_tool_use": 3.04,
+  "first_tool_result": 3.14,
+  "first_action": 3.14,
+  "first_observation": 3.14,
+  "first_delta": 18.14,
+  "first_final": 30.48,
+  "total": 30.48
+ },
+ {
+  "prompt": "coordinate.py 里 Latitude 的取值范围校验是怎么写的？",
+  "events": 101,
+  "first_event": 58.88,
+  "first_thought": 58.88,
+  "first_tool_use": 58.88,
+  "first_tool_result": 58.89,
+  "first_action": 58.89,
+  "first_observation": 58.89,
+  "first_delta": 75.7,
+  "first_final": 95.28,
+  "total": 95.28
+ },
+ {
+  "prompt": "Have there been past pull requests that ",
+  "events": 125,
+  "first_event": 3.96,
+  "first_thought": 3.96,
+  "first_tool_use": 3.96,
+  "first_tool_result": 4.12,
+  "first_action": 4.12,
+  "first_observation": 4.12,
+  "first_delta": 35.51,
+  "first_final": 51.45,
+  "total": 51.45
+ }
+]

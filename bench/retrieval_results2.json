@@ -1,0 +1,9240 @@
+{
+ "summary": {
+  "hybrid_no_instruction": {
+   "all": {
+    "n": 160,
+    "recall@1": 0.875,
+    "recall@3": 0.9563,
+    "recall@5": 0.9688,
+    "recall@10": 0.9812,
+    "mrr@10": 0.9174,
+    "ndcg@10": 0.9334
+   },
+   "semantic": {
+    "n": 80,
+    "recall@1": 0.825,
+    "recall@3": 0.95,
+    "recall@5": 0.9625,
+    "recall@10": 0.9875,
+    "mrr@10": 0.89,
+    "ndcg@10": 0.9143
+   },
+   "keyword": {
+    "n": 80,
+    "recall@1": 0.925,
+    "recall@3": 0.9625,
+    "recall@5": 0.975,
+    "recall@10": 0.975,
+    "mrr@10": 0.9448,
+    "ndcg@10": 0.9524
+   },
+   "latency_ms": {
+    "p50": 68.0,
+    "p95": 91.1
+   }
+  },
+  "hybrid_no_instruction+rerank": {
+   "all": {
+    "n": 160,
+    "recall@1": 0.8625,
+    "recall@3": 0.9437,
+    "recall@5": 0.9688,
+    "recall@10": 0.9812,
+    "mrr@10": 0.9098,
+    "ndcg@10": 0.9276
+   },
+   "semantic": {
+    "n": 80,
+    "recall@1": 0.8125,
+    "recall@3": 0.925,
+    "recall@5": 0.9625,
+    "recall@10": 0.9875,
+    "mrr@10": 0.879,
+    "ndcg@10": 0.9058
+   },
+   "keyword": {
+    "n": 80,
+    "recall@1": 0.9125,
+    "recall@3": 0.9625,
+    "recall@5": 0.975,
+    "recall@10": 0.975,
+    "mrr@10": 0.9406,
+    "ndcg@10": 0.9494
+   },
+   "latency_ms": {
+    "p50": 68.3,
+    "p95": 90.1
+   }
+  },
+  "bm25_only": {
+   "all": {
+    "n": 160,
+    "recall@1": 0.7438,
+    "recall@3": 0.8812,
+    "recall@5": 0.8938,
+    "recall@10": 0.9437,
+    "mrr@10": 0.8183,
+    "ndcg@10": 0.8492
+   },
+   "semantic": {
+    "n": 80,
+    "recall@1": 0.625,
+    "recall@3": 0.8,
+    "recall@5": 0.825,
+    "recall@10": 0.9,
+    "mrr@10": 0.722,
+    "ndcg@10": 0.7655
+   },
+   "keyword": {
+    "n": 80,
+    "recall@1": 0.8625,
+    "recall@3": 0.9625,
+    "recall@5": 0.9625,
+    "recall@10": 0.9875,
+    "mrr@10": 0.9146,
+    "ndcg@10": 0.9329
+   },
+   "latency_ms": {
+    "p50": 64.2,
+    "p95": 85.1
+   }
+  },
+  "_query_embedding_ms": {
+   "p50": 23.4,
+   "p95": 26.0
+  },
+  "_context_compression_top5": {
+   "tokens_before": 0,
+   "tokens_after": 0,
+   "reduction": 0
+  }
+ },
+ "rows": {
+  "hybrid_no_instruction": [
+   {
+    "id": "issue-149-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "issue",
+      "Add a file type to check if a path is new without checking if its parent exists"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-149-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "pull_request",
+      "chore: resolve `pydantic-core` dependency conflict"
+     ],
+     [
+      "pull_request",
+      "uprev pydantic to b3"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-semantic",
+    "style": "semantic",
+    "rank": 7,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix all deprecated functions"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Constrained types and other types that were removed in Pydantic V2"
+     ],
+     [
+      "issue",
+      "Add OTP Type to Types"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "issue",
+      "Support Decimal-backed Coordinates with string-based serialization"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "pull_request",
+      "feat: Support `Decimal` type in coordinates"
+     ],
+     [
+      "issue",
+      "Add OTP Type to Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ],
+     [
+      "pull_request",
+      "Fix serialization of mongo_object_id"
+     ],
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      ":recycle: Migrate Pydantic Extra Types to use uv"
+     ],
+     [
+      "pull_request",
+      "Add a dev container"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ],
+     [
+      "pull_request",
+      "Version 2.1.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "pull_request",
+      "Version 2.1.0"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "issue",
+      "feature request: JSON Schema"
+     ],
+     [
+      "pull_request",
+      "feat(json_schema): add JsonSchema type validated by jsonschema"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "issue",
+      "feature request: JSON Schema"
+     ],
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ],
+     [
+      "pull_request",
+      "Added LanguageAlpha2 and LanguageName types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump the python-packages group with 4 updates"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "pull_request",
+      "add parsing of pendulum_dt from unix time"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a DomainStr type to validate domains "
+     ],
+     [
+      "pull_request",
+      "Domain name string type"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-keyword",
+    "style": "keyword",
+    "rank": 4,
+    "top": [
+     [
+      "pull_request",
+      "Domain name string type"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ],
+     [
+      "issue",
+      "Support Decimal-backed Coordinates with string-based serialization"
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "issue",
+      "Support for rrule"
+     ],
+     [
+      "pull_request",
+      "uprev pydantic to b3"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      ":bug: deprecate `__modify_schema__` method"
+     ],
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "issue",
+      "Cannot install version 2.9 using conda."
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "pull_request",
+      "chore: resolve `pydantic-core` dependency conflict"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.8.2"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.8.2"
+     ],
+     [
+      "pull_request",
+      "pendulum.DateTime instantiation from dt.datetime"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "add native datetime to pendulum_dt.py"
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `UnionPay` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "pull_request",
+      "Add support for pendulum Duration"
+     ],
+     [
+      "pull_request",
+      "add parsing of pendulum_dt from unix time"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump the python-packages group with 4 updates"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump pypa/gh-action-pypi-publish from 1.14.1 to 1.14.2"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "feat: add S3Path"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ],
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ],
+     [
+      "issue",
+      "Unhandled validation error when parsing Color"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "issue",
+      "pendulum DateTime type doesn't accept python standard datetime"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "issue",
+      "Add better representation for Color object"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "pull_request",
+      "Add long and short format to as_hex"
+     ],
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-keyword",
+    "style": "keyword",
+    "rank": null,
+    "top": [
+     [
+      "issue",
+      "Migrate Types ex. Color | Payment Card Number."
+     ],
+     [
+      "pull_request",
+      "♻️ refactor the `validate_brand` method & add new types"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ],
+     [
+      "pull_request",
+      "Preserve months when using the Pendulum Duration type"
+     ],
+     [
+      "issue",
+      "Months of a Duration are getting (de)serialized incorrectly"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Months of a Duration are getting (de)serialized incorrectly"
+     ],
+     [
+      "pull_request",
+      "Preserve months when using the Pendulum Duration type"
+     ],
+     [
+      "pull_request",
+      "limit iso8601 serialization of duration to json"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "Epoch - unix timestamp"
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "Epoch - unix timestamp"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Docs use library incorrectly"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Docs use library incorrectly"
+     ],
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "pull_request",
+      "🐛 fix all deprecated functions"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor country type using `pycountry`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "issue",
+      "Add types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Human Readable Byte Type"
+     ],
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How do we decide what to add here?"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "issue",
+      "Support phonenumbers v9"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How do we decide what to add here?"
+     ],
+     [
+      "issue",
+      "Support phonenumbers v9"
+     ],
+     [
+      "issue",
+      "Add OTP Type to Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid 2.x on Python 3.9 and later"
+     ],
+     [
+      "issue",
+      "mypy is not happy with `ulid.ULID`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid version 4.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid 2.x on Python 3.9 and later"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add type checking support and improve type hints across the codebase"
+     ],
+     [
+      "pull_request",
+      "Add back Python 3.8 support"
+     ],
+     [
+      "pull_request",
+      "🐛 fix all deprecated functions"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-keyword",
+    "style": "keyword",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "Add back Python 3.8 support"
+     ],
+     [
+      "pull_request",
+      "chore: Clean the `country` type & Update the Dependencies"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-semantic",
+    "style": "semantic",
+    "rank": 4,
+    "top": [
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ],
+     [
+      "pull_request",
+      "feat: add PandasDataFrame and PandasSeries types"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ add `pandas.Series`"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump re-actors/alls-green from 1.2.2 to 1.3.0"
+     ],
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.1"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "issue",
+      "Support phonenumbers v9"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "pull_request",
+      "⬆ Update phonenumbers requirement from <9,>=8 to >=8,<10 in the python-packages group"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ],
+     [
+      "pull_request",
+      "make `phonenumbers` a requirement"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Refactor exception handling in color lookup to use conditional check"
+     ],
+     [
+      "issue",
+      "Support `transparent` Color"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Support `transparent` Color"
+     ],
+     [
+      "pull_request",
+      "fix(color): allow whitespace around a color name, like the other formats"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "issue",
+      "Slashes get cut off in CronStr"
+     ],
+     [
+      "pull_request",
+      "fix(cron): preserve explicit /step when serializing CronStr"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "issue",
+      "Add a cron type string"
+     ],
+     [
+      "issue",
+      "New release?"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "issue",
+      "Test failure with 2.10.5 release"
+     ],
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "issue",
+      "Test failure with 2.10.5 release"
+     ],
+     [
+      "pull_request",
+      "Add support for pendulum Duration"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "pull_request",
+      "add parsing of pendulum_dt from unix time"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Replaced pydantic_core deprecated method"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Replaced pydantic_core deprecated method"
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ],
+     [
+      "pull_request",
+      "Added __get_pydantic_json_schema__ method with format='tel'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "Add semantic version type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "👷 Add coverage check on the pipeline"
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "👷 Add coverage check on the pipeline"
+     ],
+     [
+      "issue",
+      "Migrate Types ex. Color | Payment Card Number."
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "pull_request",
+      "feat: add S3Path"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Add ABARouting number type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ],
+     [
+      "pull_request",
+      "Make checksum calculation more descriptive"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      ":recycle: Migrate Pydantic Extra Types to use uv"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix Failed tests for `color` type"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix Failed tests for `color` type"
+     ],
+     [
+      "pull_request",
+      "Fix color parsing when TypeError"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "issue",
+      "Add field for IANA timezone names"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ],
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ],
+     [
+      "issue",
+      "New Type: ISBN (International Standard Book Number)"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-keyword",
+    "style": "keyword",
+    "rank": 3,
+    "top": [
+     [
+      "issue",
+      "New Type: ISBN (International Standard Book Number)"
+     ],
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ],
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `Maestro` card brand to `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `Maestro` card brand to `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-semantic",
+    "style": "semantic",
+    "rank": 7,
+    "top": [
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add convenient lookup to ISO639_3 for alpha2 and name"
+     ],
+     [
+      "pull_request",
+      "Added LanguageAlpha2 and LanguageName types"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `PhoneNumber` and `ABARoutingNumber`"
+     ],
+     [
+      "pull_request",
+      "docs: fix-isbn-typos"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "pull_request",
+      "Preserve months when using the Pendulum Duration type"
+     ],
+     [
+      "pull_request",
+      "Add support for pendulum Duration"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "pull_request",
+      "pendulum.DateTime instantiation from dt.datetime"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ],
+     [
+      "pull_request",
+      "feat(json_schema): add JsonSchema type validated by jsonschema"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ],
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "pull_request",
+      "Add currency code ISO 4217 and its subset that includes only currencies"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support Money as Type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "pull_request",
+      "isolate url in Currency"
+     ],
+     [
+      "pull_request",
+      "Add currency code ISO 4217 and its subset that includes only currencies"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add semantic version type"
+     ],
+     [
+      "issue",
+      "UUID v7 Support"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add semantic version type"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "issue",
+      "Allow constructing an ULID from an UUID"
+     ],
+     [
+      "pull_request",
+      "Allow constructing an ULID from an `uuid.UUID`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      ":memo: Refactor Documentation for ISBN and MAC address modules"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "issue",
+      "Add IBAN Type to Types"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Latest Changes"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add `Verve` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ]
+    ]
+   }
+  ],
+  "hybrid_no_instruction+rerank": [
+   {
+    "id": "issue-149-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "issue",
+      "Add a file type to check if a path is new without checking if its parent exists"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-149-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "pull_request",
+      "chore: resolve `pydantic-core` dependency conflict"
+     ],
+     [
+      "pull_request",
+      "uprev pydantic to b3"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-semantic",
+    "style": "semantic",
+    "rank": 7,
+    "top": [
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Constrained types and other types that were removed in Pydantic V2"
+     ],
+     [
+      "issue",
+      "Add OTP Type to Types"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "issue",
+      "Support Decimal-backed Coordinates with string-based serialization"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ],
+     [
+      "pull_request",
+      "feat: Support `Decimal` type in coordinates"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ],
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ],
+     [
+      "pull_request",
+      "Fix serialization of mongo_object_id"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "pull_request",
+      ":recycle: Migrate Pydantic Extra Types to use uv"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ],
+     [
+      "pull_request",
+      "Version 2.1.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "pull_request",
+      "Version 2.1.0"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "issue",
+      "feature request: JSON Schema"
+     ],
+     [
+      "pull_request",
+      "feat(json_schema): add JsonSchema type validated by jsonschema"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "issue",
+      "feature request: JSON Schema"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump the python-packages group with 4 updates"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a DomainStr type to validate domains "
+     ],
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-keyword",
+    "style": "keyword",
+    "rank": 4,
+    "top": [
+     [
+      "pull_request",
+      "Domain name string type"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "pull_request",
+      "uprev pydantic to b3"
+     ],
+     [
+      "issue",
+      "Support for rrule"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      ":bug: deprecate `__modify_schema__` method"
+     ],
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "issue",
+      "Cannot install version 2.9 using conda."
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ],
+     [
+      "pull_request",
+      "chore: resolve `pydantic-core` dependency conflict"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.8.2"
+     ],
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.8.2"
+     ],
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "add native datetime to pendulum_dt.py"
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `UnionPay` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "pull_request",
+      "add native datetime to pendulum_dt.py"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump pypa/gh-action-pypi-publish from 1.14.1 to 1.14.2"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump astral-sh/setup-uv from 9.0.0 to 10.2.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "feat: add S3Path"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "issue",
+      "Add PasswordStr type for password strength validation (follow-up to #1)"
+     ],
+     [
+      "issue",
+      "Coordinate cannot be used as optional field"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ],
+     [
+      "issue",
+      "Unhandled validation error when parsing Color"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "issue",
+      "Add better representation for Color object"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "pull_request",
+      "Add long and short format to as_hex"
+     ],
+     [
+      "pull_request",
+      "fix(color): allow whitespace around a color name, like the other formats"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-keyword",
+    "style": "keyword",
+    "rank": null,
+    "top": [
+     [
+      "issue",
+      "Migrate Types ex. Color | Payment Card Number."
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor the `validate_brand` method & add new types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-semantic",
+    "style": "semantic",
+    "rank": 5,
+    "top": [
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ],
+     [
+      "pull_request",
+      "Preserve months when using the Pendulum Duration type"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Months of a Duration are getting (de)serialized incorrectly"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "pull_request",
+      "limit iso8601 serialization of duration to json"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor country type using `pycountry`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "pull_request",
+      "Refactor validate_mac_address method"
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "Epoch - unix timestamp"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-semantic",
+    "style": "semantic",
+    "rank": 4,
+    "top": [
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Docs use library incorrectly"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "issue",
+      "Add granular dependency extras"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor country type using `pycountry`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ],
+     [
+      "issue",
+      "Add PasswordStr type for password strength validation (follow-up to #1)"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Add PasswordStr type for password strength validation (follow-up to #1)"
+     ],
+     [
+      "issue",
+      "Human Readable Byte Type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How do we decide what to add here?"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How do we decide what to add here?"
+     ],
+     [
+      "issue",
+      "Support phonenumbers v9"
+     ],
+     [
+      "issue",
+      "Add granular dependency extras"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid version 4.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid 2.x on Python 3.9 and later"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid version 4.x"
+     ],
+     [
+      "pull_request",
+      "Allow python-ulid 2.x on Python 3.9 and later"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add type checking support and improve type hints across the codebase"
+     ],
+     [
+      "pull_request",
+      "Add back Python 3.8 support"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-keyword",
+    "style": "keyword",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "Add back Python 3.8 support"
+     ],
+     [
+      "pull_request",
+      "chore: Clean the `country` type & Update the Dependencies"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor country type using `pycountry`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-semantic",
+    "style": "semantic",
+    "rank": 4,
+    "top": [
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "feat: add PandasDataFrame and PandasSeries types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ add `pandas.Series`"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump re-actors/alls-green from 1.2.2 to 1.3.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.1"
+     ],
+     [
+      "workflow_run",
+      "CI#3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "issue",
+      "Support phonenumbers v9"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "pull_request",
+      "⬆ Update phonenumbers requirement from <9,>=8 to >=8,<10 in the python-packages group"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ],
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Refactor exception handling in color lookup to use conditional check"
+     ],
+     [
+      "issue",
+      "Support `transparent` Color"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Support `transparent` Color"
+     ],
+     [
+      "pull_request",
+      "fix(color): allow whitespace around a color name, like the other formats"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "pull_request",
+      "fix(cron): preserve explicit /step when serializing CronStr"
+     ],
+     [
+      "issue",
+      "Slashes get cut off in CronStr"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "workflow_run",
+      "CI#5"
+     ],
+     [
+      "issue",
+      "New release?"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "issue",
+      "Months of a Duration are getting (de)serialized incorrectly"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): preserve Interval boundaries on JSON serialization"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Replaced pydantic_core deprecated method"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Replaced pydantic_core deprecated method"
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ],
+     [
+      "pull_request",
+      "Added __get_pydantic_json_schema__ method with format='tel'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "👷 Add coverage check on the pipeline"
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ],
+     [
+      "pull_request",
+      "fix(color): add rebeccapurple, the CSS Color Level 4 named color"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "👷 Add coverage check on the pipeline"
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ],
+     [
+      "issue",
+      "Migrate Types ex. Color | Payment Card Number."
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ],
+     [
+      "pull_request",
+      "feat: add S3Path"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "pull_request",
+      "test: assert specific IBAN validation errors and cover the check-digit helper"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ],
+     [
+      "pull_request",
+      "Make checksum calculation more descriptive"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      ":recycle: Migrate Pydantic Extra Types to use uv"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix Failed tests for `color` type"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix Failed tests for `color` type"
+     ],
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      "Fix color parsing when TypeError"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ],
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "New Type: ISBN (International Standard Book Number)"
+     ],
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ],
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "pull_request",
+      "Identify Verve cards before the broader Discover prefix"
+     ],
+     [
+      "issue",
+      "Add `Maestro` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `Maestro` card brand to `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-semantic",
+    "style": "semantic",
+    "rank": 7,
+    "top": [
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add convenient lookup to ISO639_3 for alpha2 and name"
+     ],
+     [
+      "pull_request",
+      "Added LanguageAlpha2 and LanguageName types"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `PhoneNumber` and `ABARoutingNumber`"
+     ],
+     [
+      "pull_request",
+      "docs: fix-isbn-typos"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "🐛 fix: serialize Pendulum zero Duration as valid ISO 8601 'P0D'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "pull_request",
+      "✨ Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "pull_request",
+      "uprev pydantic to b3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ],
+     [
+      "pull_request",
+      "feat(json_schema): add JsonSchema type validated by jsonschema"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ],
+     [
+      "pull_request",
+      "Add long and short format to as_hex"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Add currency code ISO 4217 and its subset that includes only currencies"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "pull_request",
+      "isolate url in Currency"
+     ],
+     [
+      "pull_request",
+      "Add currency code ISO 4217 and its subset that includes only currencies"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add semantic version type"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add semantic version type"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "pull_request",
+      "Allow constructing an ULID from an `uuid.UUID`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      ":memo: Refactor Documentation for ISBN and MAC address modules"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ],
+     [
+      "pull_request",
+      "test: assert specific IBAN validation errors and cover the check-digit helper"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "issue",
+      "Add `Dankort` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ]
+    ]
+   }
+  ],
+  "bm25_only": [
+   {
+    "id": "issue-149-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "issue",
+      "Add a file type to check if a path is new without checking if its parent exists"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-149-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "More convenient pathlib.Path types"
+     ],
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "pull_request",
+      "chore: resolve `pydantic-core` dependency conflict"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ],
+     [
+      "issue",
+      "Release Cycle for this Project?"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-78-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Constrained types and other types that were removed in Pydantic V2"
+     ],
+     [
+      "pull_request",
+      "DSN migration for pydantic v3"
+     ],
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ]
+    ]
+   },
+   {
+    "id": "issue-173-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add Python fraction to native types "
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "feat: migrate DSN types from pydantic.networks"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-semantic",
+    "style": "semantic",
+    "rank": 5,
+    "top": [
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-300-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-28-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "issue",
+      "Setup Repository (CI/CD, Packaging, Tests)."
+     ],
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support OTP as a type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-34-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add hypothesis plugin"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-217-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): preserve Interval boundaries on JSON serialization"
+     ],
+     [
+      "issue",
+      "Support for rrule"
+     ]
+    ]
+   },
+   {
+    "id": "issue-55-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Check types' schemas"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "issue",
+      "feature request: JSON Schema"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639 (639-1, 639-2/T, 639-2/B) codes used to classify languages"
+     ]
+    ]
+   },
+   {
+    "id": "issue-163-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Package Request: v2.6.1 - Alpha-2 Language Codes"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ]
+    ]
+   },
+   {
+    "id": "issue-239-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "question: plan for `pendulum_dt` given lack of `3.13` support"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-31-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ],
+     [
+      "issue",
+      "Support numpy types"
+     ],
+     [
+      "issue",
+      "Support pandas types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ]
+    ]
+   },
+   {
+    "id": "issue-211-keyword",
+    "style": "keyword",
+    "rank": 6,
+    "top": [
+     [
+      "pull_request",
+      "Domain name string type"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-94-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-19-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      ":bug: deprecate `__modify_schema__` method"
+     ],
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ],
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-44-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "`pydantic-core` dependency conflict"
+     ],
+     [
+      "issue",
+      "Support for Pendulum"
+     ],
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-188-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ],
+     [
+      "issue",
+      "pendulum DateTime type doesn't accept python standard datetime"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.8.2"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "issue-183-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "pendulum_dt.Date can resolve to datetime.date"
+     ],
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): preserve Interval boundaries on JSON serialization"
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "issue-33-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add more card brands to `PaymentCardNumber`"
+     ],
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "issue",
+      "Add `JCB` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ]
+    ]
+   },
+   {
+    "id": "issue-107-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "How to set region-code or format-type for PhoneNumber?"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ],
+     [
+      "issue",
+      "How can I solve ModuleNotFoundError: No module named 'pydantic_extra_types'?"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "issue-329-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): preserve Interval boundaries on JSON serialization"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump astral-sh/setup-uv from 4 to 5"
+     ],
+     [
+      "pull_request",
+      "✨ add `pandas.Series`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-227-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Upload version 2.10.0 to PyPI"
+     ],
+     [
+      "workflow_run",
+      "uv in /. - Update #1603815915#3"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support OTP as a type"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ]
+    ]
+   },
+   {
+    "id": "issue-187-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic does not support contextlib.ExitStack."
+     ],
+     [
+      "issue",
+      "Coordinate cannot be used as optional field"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support OTP as a type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-semantic",
+    "style": "semantic",
+    "rank": 7,
+    "top": [
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-353-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Color import missing in __init__.py ?"
+     ],
+     [
+      "issue",
+      "ModuleNotFoundError: No module named 'pydantic._internal'"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-semantic",
+    "style": "semantic",
+    "rank": 6,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-232-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+     ],
+     [
+      "issue",
+      "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+     ],
+     [
+      "issue",
+      "pydantic_extra_types.pendulum_dt.DateTime and pendulum.DateTime are not compatible for mypy"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "issue",
+      "Add PasswordStr type for password strength validation (follow-up to #1)"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ]
+    ]
+   },
+   {
+    "id": "issue-66-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+     ],
+     [
+      "pull_request",
+      "Add long and short format to as_hex"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.2.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ]
+    ]
+   },
+   {
+    "id": "issue-99-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "issue",
+      "Migrate Types ex. Color | Payment Card Number."
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Default to using system zoneinfo if available"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-291-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ],
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-295-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Months of a Duration are getting (de)serialized incorrectly"
+     ],
+     [
+      "pull_request",
+      "limit iso8601 serialization of duration to json"
+     ],
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "issue-356-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Deprecation Warning in pycountry due to pkg_resources usage"
+     ],
+     [
+      "pull_request",
+      "♻️ refactor country type using `pycountry`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ]
+    ]
+   },
+   {
+    "id": "issue-307-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-238-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "pull_request",
+      "Epoch - unix timestamp"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ],
+     [
+      "issue",
+      "Date type does not decompose correctly"
+     ]
+    ]
+   },
+   {
+    "id": "issue-287-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Docs use library incorrectly"
+     ],
+     [
+      "issue",
+      "Color class not exposed as high-level type"
+     ],
+     [
+      "pull_request",
+      "Export `Color` from package `__init__.py`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "issue-420-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Consider allowing `phonenumberslite` as an extra option"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "issue-414-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): stop DateTime defaulting a naive input to UTC"
+     ],
+     [
+      "issue",
+      "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-299-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Documentation for new `MongoObjectId` type"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Pydantic Extra Types"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.6.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-24-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Use debian's `iso-codes`"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.6.0"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Fix MacAddress accepting octets with a sign or whitespace"
+     ],
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ]
+    ]
+   },
+   {
+    "id": "issue-228-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Adding basic string types - NonEmptyString, Character"
+     ],
+     [
+      "issue",
+      "Add PasswordStr type for password strength validation (follow-up to #1)"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-semantic",
+    "style": "semantic",
+    "rank": 6,
+    "top": [
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      ":sparkles: adding new type iban"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ]
+    ]
+   },
+   {
+    "id": "issue-74-keyword",
+    "style": "keyword",
+    "rank": 6,
+    "top": [
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump the python-packages group with 3 updates"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "issue",
+      "Add granular dependency extras"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "issue-130-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "Please support python-ulid 2.x"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.6.0"
+     ],
+     [
+      "issue",
+      "Add granular dependency extras"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "issue-326-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "✨ Add type checking support and improve type hints across the codebase"
+     ],
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-86-keyword",
+    "style": "keyword",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "Fix a Pendulum date time object to have correct typing"
+     ],
+     [
+      "issue",
+      "data type for unix timestamp - Epoch"
+     ],
+     [
+      "issue",
+      "Problem with importing mac_address"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-349-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ],
+     [
+      "pull_request",
+      "✨ add `pandas.Series`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-68-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ add `pandas.Series`"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Series and DataFrame extra types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump astral-sh/setup-uv from 8.3.2 to 9.0.0"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump re-actors/alls-green from 1.2.2 to 1.3.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-360-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update version number for release 2.11.0"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.1"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump re-actors/alls-green from 1.2.2 to 1.3.0"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-202-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "pull_request",
+      "⬆ Bump the python-packages group with 4 updates"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-355-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix: url typo in docstring"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ],
+     [
+      "pull_request",
+      "Fix import typo in the script code's documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-426-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "project_doc",
+      "Pydantic Extra Types · Installation"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ],
+     [
+      "issue",
+      "How do we decide what to add here?"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-394-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: Adjust tests for Pydantic 2.13"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      ":memo: Refactor Documentation for ISBN and MAC address modules"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-96-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Revert \"Refactor documentation\""
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ],
+     [
+      "pull_request",
+      "Refactor documentation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Refactor exception handling in color lookup to use conditional check"
+     ],
+     [
+      "issue",
+      "Add better representation for Color object"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-59-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add support for transparent Color"
+     ],
+     [
+      "issue",
+      "Support `transparent` Color"
+     ],
+     [
+      "pull_request",
+      "fix(color): allow whitespace around a color name, like the other formats"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "pull_request",
+      "fix(cron): preserve explicit /step when serializing CronStr"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-361-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "🐛 fix Cron Tests (Happy New Year 🎉 )"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ],
+     [
+      "pull_request",
+      "feat: add numpy array and scalar types (Fixes #31)"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-443-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+     ],
+     [
+      "issue",
+      "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ],
+     [
+      "pull_request",
+      "Added Time parsing to pendulum_dt"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-379-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "issue",
+      "[pendulum] Missing wrapper for Interval type"
+     ],
+     [
+      "pull_request",
+      "fix(pendulum_dt): preserve Interval boundaries on JSON serialization"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-semantic",
+    "style": "semantic",
+    "rank": 6,
+    "top": [
+     [
+      "issue",
+      "Add equality/hash check for phone numbers"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-100-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Replaced pydantic_core deprecated method"
+     ],
+     [
+      "issue",
+      "Pydantic 2.4.2 dependencies throw deprecation warnings"
+     ],
+     [
+      "issue",
+      "DeprecationWarning for `field_name` argument on `with_info_after_validator_function` raises"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Fix Color JSON schema generation"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-237-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Update SemanticVersion"
+     ],
+     [
+      "pull_request",
+      "Fix a typo in the DeprecationWarning warning of _VersionPydanticAnnotation"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-semantic",
+    "style": "semantic",
+    "rank": 4,
+    "top": [
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "issue",
+      "Refactor exception handling in color lookup to use conditional check"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-53-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "👷 Add coverage check on the pipeline"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "pull_request",
+      "✅ Add 100% coverage"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-354-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.11.0"
+     ],
+     [
+      "pull_request",
+      "feat: add S3Path"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "issue",
+      "Feature Request: MacAddress validation to support packed input types"
+     ],
+     [
+      "pull_request",
+      "feat: add IBAN (International Bank Account Number) type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-403-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: reject non-ASCII ABA routing digits"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Latest Changes"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "pull_request",
+      "Add a phonenumberslite optional dependency"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-27-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add a dev container"
+     ],
+     [
+      "issue",
+      "Add a developer container configuration"
+     ],
+     [
+      "issue",
+      "Country specific types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): make ULID serializable to JSON"
+     ],
+     [
+      "pull_request",
+      "Add JWTStr type for structural JWT validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-358-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+     ],
+     [
+      "issue",
+      "2.10.6: Failing `test_json_schema` tests"
+     ],
+     [
+      "issue",
+      "Regression in test_json_schema with Pydantic 2.9"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "pull_request",
+      "chore(feat): Support OTP as a type"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ],
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-26-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Fix Failed tests for `color` type"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · 2.0.0"
+     ],
+     [
+      "issue",
+      "tests/test_types_color.py::test_model_validation gets deprecation warning"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-376-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ],
+     [
+      "pull_request",
+      "Add `Latitude`, `Longitude` and `Coordinate` "
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-116-keyword",
+    "style": "keyword",
+    "rank": 3,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn): accept hyphens and spaces between the parts of an ISBN"
+     ],
+     [
+      "issue",
+      "New Type: ISBN (International Standard Book Number)"
+     ],
+     [
+      "pull_request",
+      "Add: New type ISBN"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "pull_request",
+      "Identify Verve cards before the broader Discover prefix"
+     ],
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-325-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "feat: update credit card brands"
+     ],
+     [
+      "pull_request",
+      "Add `MIR` card brand"
+     ],
+     [
+      "issue",
+      "Add `JCB` card brand to `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-semantic",
+    "style": "semantic",
+    "rank": null,
+    "top": [
+     [
+      "issue",
+      "Add support for ISO 639-1 codes"
+     ],
+     [
+      "issue",
+      "Incomplete ISO639_3 Language List"
+     ],
+     [
+      "issue",
+      "Include convenient accessors to language name and two letter language code in ISO639_3"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-437-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add convenient lookup to ISO639_3 for alpha2 and name"
+     ],
+     [
+      "pull_request",
+      "Added LanguageAlpha2 and LanguageName types"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Latest Changes"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-semantic",
+    "style": "semantic",
+    "rank": 6,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-347-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: improve example formatting in PhoneNumber documentation"
+     ],
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "issue",
+      "\"Month\" durations get converted to weeks / days"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-296-keyword",
+    "style": "keyword",
+    "rank": 2,
+    "top": [
+     [
+      "pull_request",
+      "fix: correct ISO 8601 serialization for negative pendulum Duration values"
+     ],
+     [
+      "pull_request",
+      "fix (de-)serialization of pendulum durations"
+     ],
+     [
+      "pull_request",
+      "🐛 fix: serialize Pendulum zero Duration as valid ISO 8601 'P0D'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "Add phone number types"
+     ],
+     [
+      "pull_request",
+      "feature: Improve phone number validator"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-203-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-semantic",
+    "style": "semantic",
+    "rank": 6,
+    "top": [
+     [
+      "issue",
+      "Automatic field encryption and decryption"
+     ],
+     [
+      "issue",
+      "PhoneNumberValidator with number_format='NATIONAL' drops the country code of foreign numbers, so the model can't reload its own output"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-310-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "✨ Add support for the whenever package"
+     ],
+     [
+      "issue",
+      "Add support for the whenever package"
+     ],
+     [
+      "pull_request",
+      "fix(cron): preserve explicit /step when serializing CronStr"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "issue",
+      "Support for rrule"
+     ],
+     [
+      "pull_request",
+      "feat(isin): add ISIN type with checksum validation"
+     ],
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-433-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add Sha256Str type"
+     ],
+     [
+      "pull_request",
+      "feat(pandas): add Timestamp, Series and DataFrame types (#64)"
+     ],
+     [
+      "issue",
+      "feature request: add pydantic.types.Sha256Str"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-308-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "♻️ Fix regex pattern for Domain"
+     ],
+     [
+      "issue",
+      "DomainStr allows ip addresses"
+     ],
+     [
+      "pull_request",
+      "Domain name string type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "fix(dsn): accept schemes dropped in the migration from pydantic.networks"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-236-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "lower case currency is valid"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support Money as Type"
+     ],
+     [
+      "pull_request",
+      "feat(isin): add ISIN type with checksum validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "fix(python): add missing Pendulum Interval wrapper support"
+     ],
+     [
+      "pull_request",
+      "Add semantic version type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-199-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Add semantic version type"
+     ],
+     [
+      "pull_request",
+      "Add SemanticVersion type"
+     ],
+     [
+      "pull_request",
+      "Domain name string type"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-semantic",
+    "style": "semantic",
+    "rank": 2,
+    "top": [
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "pull_request",
+      "fix(mongo_object_id): validate ObjectId when parsing from JSON"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-151-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Added in a new object id field for mongodb"
+     ],
+     [
+      "issue",
+      "Support for MongoDB ObjectID in Pydantic Models"
+     ],
+     [
+      "issue",
+      "MongoObjectId: model_dump returns string instead of ObjectId"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-435-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ],
+     [
+      "pull_request",
+      "fix(epoch): raise ValidationError for out-of-range timestamps"
+     ],
+     [
+      "pull_request",
+      "fix(ulid, color): raise ValidationError for types float()/from_bytes reject"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "pull_request",
+      ":memo: Refactor Documentation for ISBN and MAC address modules"
+     ],
+     [
+      "pull_request",
+      "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-408-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Latest Changes"
+     ],
+     [
+      "pull_request",
+      "fix(isin, isbn, iban): reject non-ASCII digits"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-semantic",
+    "style": "semantic",
+    "rank": 3,
+    "top": [
+     [
+      "pull_request",
+      "Migrate `Color` & `Payment Card`"
+     ],
+     [
+      "pull_request",
+      "chore(feat): Support OTP as a type"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-50-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 Add documentation for `Color` and `PaymentCardNumber`"
+     ],
+     [
+      "issue",
+      "Migrate Types from `Pydantic` to `Pydantic-extra-types`"
+     ],
+     [
+      "issue",
+      "ModuleNotFoundError: No module named 'pydantic._internal'"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-431-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "Accept internal hyphens in punycode top-level domains"
+     ],
+     [
+      "issue",
+      "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+     ],
+     [
+      "pull_request",
+      "Added test coverage for DomainStr validation including punycode and invalid inputs"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "issue",
+      "TimeZoneName validator rejects EDT timezone abbreviation despite accepting EST"
+     ],
+     [
+      "pull_request",
+      "Add timezone name validation"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-395-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+     ],
+     [
+      "project_doc",
+      "CHANGELOG · Latest Changes"
+     ],
+     [
+      "issue",
+      "Duplicate semantic versioning modules"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-semantic",
+    "style": "semantic",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "📝 Add documentation for `PhoneNumber` and `ABARoutingNumber`"
+     ]
+    ]
+   },
+   {
+    "id": "pull_request-341-keyword",
+    "style": "keyword",
+    "rank": 1,
+    "top": [
+     [
+      "pull_request",
+      "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+     ],
+     [
+      "pull_request",
+      "Feature: Add phone number validator"
+     ],
+     [
+      "pull_request",
+      "fix(phone_numbers): keep the country code for foreign numbers with NATIONAL format"
+     ]
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1442 @@
+[
+ {
+  "id": "issue-149-semantic",
+  "style": "semantic",
+  "query": "Can pydantic provide built-in path field types that validate existing files or directories and automatically expand and resolve user paths?",
+  "source_type": "issue",
+  "gold_source_id": "4cdff66f-fdd7-4f22-84c4-41c968a2eb4f",
+  "number": 149,
+  "title": "More convenient pathlib.Path types"
+ },
+ {
+  "id": "issue-149-keyword",
+  "style": "keyword",
+  "query": "pydantic ExistingPath ResolvedPath expanduser resolve pathlib",
+  "source_type": "issue",
+  "gold_source_id": "4cdff66f-fdd7-4f22-84c4-41c968a2eb4f",
+  "number": 149,
+  "title": "More convenient pathlib.Path types"
+ },
+ {
+  "id": "issue-78-semantic",
+  "style": "semantic",
+  "query": "Which validation aliases and special types dropped from the second version of the library are planned to be provided in the separate extras package?",
+  "source_type": "issue",
+  "gold_source_id": "764e6959-19b3-4c32-80d4-58bc45d9cc71",
+  "number": 78,
+  "title": "Constrained types and other types that were removed in Pydantic V2"
+ },
+ {
+  "id": "issue-78-keyword",
+  "style": "keyword",
+  "query": "pydantic v2 constrained types migration guide",
+  "source_type": "issue",
+  "gold_source_id": "764e6959-19b3-4c32-80d4-58bc45d9cc71",
+  "number": 78,
+  "title": "Constrained types and other types that were removed in Pydantic V2"
+ },
+ {
+  "id": "issue-173-semantic",
+  "style": "semantic",
+  "query": "How can I make the standard library Fraction class work as a supported field type in models, perhaps using validators or serializers?",
+  "source_type": "issue",
+  "gold_source_id": "64f7ef61-48c3-439c-aff6-75be8c37441b",
+  "number": 173,
+  "title": "Add Python fraction to native types "
+ },
+ {
+  "id": "issue-173-keyword",
+  "style": "keyword",
+  "query": "pydantic Fraction native type validators serializers",
+  "source_type": "issue",
+  "gold_source_id": "64f7ef61-48c3-439c-aff6-75be8c37441b",
+  "number": 173,
+  "title": "Add Python fraction to native types "
+ },
+ {
+  "id": "issue-300-semantic",
+  "style": "semantic",
+  "query": "Why does serializing a Pydantic model with MongoObjectId return a string in Python mode but an ObjectId in JSON mode?",
+  "source_type": "issue",
+  "gold_source_id": "36b0b82f-6090-4857-80fb-c1d3d50429b5",
+  "number": 300,
+  "title": "MongoObjectId: model_dump returns string instead of ObjectId"
+ },
+ {
+  "id": "issue-300-keyword",
+  "style": "keyword",
+  "query": "MongoObjectId model_dump ObjectId when_used json",
+  "source_type": "issue",
+  "gold_source_id": "36b0b82f-6090-4857-80fb-c1d3d50429b5",
+  "number": 300,
+  "title": "MongoObjectId: model_dump returns string instead of ObjectId"
+ },
+ {
+  "id": "issue-28-semantic",
+  "style": "semantic",
+  "query": "How can I configure a VS Code dev container for pydantic-extra-types to enable reproducible coding, testing, and linting?",
+  "source_type": "issue",
+  "gold_source_id": "dc88597e-ccd3-4d57-8475-c669b6a22915",
+  "number": 28,
+  "title": "Add a developer container configuration"
+ },
+ {
+  "id": "issue-28-keyword",
+  "style": "keyword",
+  "query": "devcontainer setup reproducible pydantic-extra-types",
+  "source_type": "issue",
+  "gold_source_id": "dc88597e-ccd3-4d57-8475-c669b6a22915",
+  "number": 28,
+  "title": "Add a developer container configuration"
+ },
+ {
+  "id": "issue-34-semantic",
+  "style": "semantic",
+  "query": "How can pydantic-extra-types be integrated with Hypothesis so generated strategies work for its custom field types?",
+  "source_type": "issue",
+  "gold_source_id": "5fe33edc-5986-46da-9057-339fbddbc71f",
+  "number": 34,
+  "title": "Add hypothesis plugin"
+ },
+ {
+  "id": "issue-34-keyword",
+  "style": "keyword",
+  "query": "pydantic-extra-types hypothesis plugin strategies",
+  "source_type": "issue",
+  "gold_source_id": "5fe33edc-5986-46da-9057-339fbddbc71f",
+  "number": 34,
+  "title": "Add hypothesis plugin"
+ },
+ {
+  "id": "issue-217-semantic",
+  "style": "semantic",
+  "query": "Why does the pydantic extra types DateTime field with a pendulum timestamp raise AttributeError about a missing instance attribute after upgrading pydantic-core?",
+  "source_type": "issue",
+  "gold_source_id": "0836d3eb-9f5c-4c2d-9da6-33f1362fbb8e",
+  "number": 217,
+  "title": "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+ },
+ {
+  "id": "issue-217-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types pendulum_dt DateTime AttributeError instance 2.23.4",
+  "source_type": "issue",
+  "gold_source_id": "0836d3eb-9f5c-4c2d-9da6-33f1362fbb8e",
+  "number": 217,
+  "title": "Changes in pendulum_dt.DateTime causes AttributeError in Version 2.23.4"
+ },
+ {
+  "id": "issue-55-semantic",
+  "style": "semantic",
+  "query": "How do we ensure every supported type emits a valid CoreSchema and corresponding JSON schema with complete test coverage?",
+  "source_type": "issue",
+  "gold_source_id": "af1bab6e-9604-47f4-9065-f9777b36e325",
+  "number": 55,
+  "title": "Check types' schemas"
+ },
+ {
+  "id": "issue-55-keyword",
+  "style": "keyword",
+  "query": "valid CoreSchema JSON schema coverage",
+  "source_type": "issue",
+  "gold_source_id": "af1bab6e-9604-47f4-9065-f9777b36e325",
+  "number": 55,
+  "title": "Check types' schemas"
+ },
+ {
+  "id": "issue-163-semantic",
+  "style": "semantic",
+  "query": "Could you publish a new PyPI release that includes the recently merged support for two-letter language codes?",
+  "source_type": "issue",
+  "gold_source_id": "c32d9163-701f-4ac5-b56b-885b448f7786",
+  "number": 163,
+  "title": "Package Request: v2.6.1 - Alpha-2 Language Codes"
+ },
+ {
+  "id": "issue-163-keyword",
+  "style": "keyword",
+  "query": "v2.6.1 alpha-2 language codes release",
+  "source_type": "issue",
+  "gold_source_id": "c32d9163-701f-4ac5-b56b-885b448f7786",
+  "number": 163,
+  "title": "Package Request: v2.6.1 - Alpha-2 Language Codes"
+ },
+ {
+  "id": "issue-239-semantic",
+  "style": "semantic",
+  "query": "What is the strategy for handling Pendulum's missing Python 3.13 compatibility and uncertain maintenance, especially regarding Rust wheel installation?",
+  "source_type": "issue",
+  "gold_source_id": "49d94873-e83e-476b-8db8-8f22916c8e1f",
+  "number": 239,
+  "title": "question: plan for `pendulum_dt` given lack of `3.13` support"
+ },
+ {
+  "id": "issue-239-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt 3.13 wheels rust",
+  "source_type": "issue",
+  "gold_source_id": "49d94873-e83e-476b-8db8-8f22916c8e1f",
+  "number": 239,
+  "title": "question: plan for `pendulum_dt` given lack of `3.13` support"
+ },
+ {
+  "id": "issue-31-semantic",
+  "style": "semantic",
+  "query": "Can the project add support for NumPy scalar data types listed in the official arrays scalars documentation?",
+  "source_type": "issue",
+  "gold_source_id": "b6f0c8c4-f758-4178-9f60-726f9964a12b",
+  "number": 31,
+  "title": "Support numpy types"
+ },
+ {
+  "id": "issue-31-keyword",
+  "style": "keyword",
+  "query": "numpy scalar types support arrays.scalars",
+  "source_type": "issue",
+  "gold_source_id": "b6f0c8c4-f758-4178-9f60-726f9964a12b",
+  "number": 31,
+  "title": "Support numpy types"
+ },
+ {
+  "id": "issue-211-semantic",
+  "style": "semantic",
+  "query": "I need a Pydantic field type that accepts only valid domain names, rejecting full URLs with schemes or file paths.",
+  "source_type": "issue",
+  "gold_source_id": "4203849b-49e7-480c-9a77-a97a462d77b8",
+  "number": 211,
+  "title": "Add a DomainStr type to validate domains "
+ },
+ {
+  "id": "issue-211-keyword",
+  "style": "keyword",
+  "query": "DomainStr pydantic domain name validation",
+  "source_type": "issue",
+  "gold_source_id": "4203849b-49e7-480c-9a77-a97a462d77b8",
+  "number": 211,
+  "title": "Add a DomainStr type to validate domains "
+ },
+ {
+  "id": "issue-94-semantic",
+  "style": "semantic",
+  "query": "How can I add built-in pydantic types for ISO week, week-date, and ordinal date string formats, possibly with compact versions without dashes?",
+  "source_type": "issue",
+  "gold_source_id": "efa1bc48-b2fc-47bc-a86c-f963bb068205",
+  "number": 94,
+  "title": "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+ },
+ {
+  "id": "issue-94-keyword",
+  "style": "keyword",
+  "query": "pydantic ISOWeek ISOWeekDate OrdinalDate",
+  "source_type": "issue",
+  "gold_source_id": "efa1bc48-b2fc-47bc-a86c-f963bb068205",
+  "number": 94,
+  "title": "`ISOWeek`, `ISOWeekDate` and `OrdinalDate`"
+ },
+ {
+  "id": "issue-19-semantic",
+  "style": "semantic",
+  "query": "When a Pydantic model uses the extra types Color class, why does model creation emit a deprecation warning about the old schema modifier method?",
+  "source_type": "issue",
+  "gold_source_id": "64e92759-ee5e-4df2-86aa-0343decc165d",
+  "number": 19,
+  "title": "tests/test_types_color.py::test_model_validation gets deprecation warning"
+ },
+ {
+  "id": "issue-19-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types Color __modify_schema__ DeprecationWarning __pydantic_modify_json_schema__",
+  "source_type": "issue",
+  "gold_source_id": "64e92759-ee5e-4df2-86aa-0343decc165d",
+  "number": 19,
+  "title": "tests/test_types_color.py::test_model_validation gets deprecation warning"
+ },
+ {
+  "id": "issue-44-semantic",
+  "style": "semantic",
+  "query": "Why does make install fail due to incompatible pinned versions of pydantic-core and pydantic, and how to fix the resolver error?",
+  "source_type": "issue",
+  "gold_source_id": "8bd9b223-3c4f-4123-a94b-5fd1f6146c24",
+  "number": 44,
+  "title": "`pydantic-core` dependency conflict"
+ },
+ {
+  "id": "issue-44-keyword",
+  "style": "keyword",
+  "query": "pydantic-core 0.27.0 pydantic 2.0a4 ResolutionImpossible",
+  "source_type": "issue",
+  "gold_source_id": "8bd9b223-3c4f-4123-a94b-5fd1f6146c24",
+  "number": 44,
+  "title": "`pydantic-core` dependency conflict"
+ },
+ {
+  "id": "issue-188-semantic",
+  "style": "semantic",
+  "query": "Why does the pydantic-extra-types 2.8.1 Pendulum DateTime field lose timezone data when subtracting a timedelta?",
+  "source_type": "issue",
+  "gold_source_id": "16b47aac-0d56-4193-9709-11739e85fbcf",
+  "number": 188,
+  "title": "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+ },
+ {
+  "id": "issue-188-keyword",
+  "style": "keyword",
+  "query": "pydantic-extra-types Pendulum DateTime timezone 2.8.1",
+  "source_type": "issue",
+  "gold_source_id": "16b47aac-0d56-4193-9709-11739e85fbcf",
+  "number": 188,
+  "title": "Pendulum `DateTime` wrapper losing `tz` and `timezone` values in 2.8.1"
+ },
+ {
+  "id": "issue-183-semantic",
+  "style": "semantic",
+  "query": "Why does validating a date string with Pydantic TypeAdapter and pendulum_dt.Date return a plain datetime.date instead of a pendulum.Date?",
+  "source_type": "issue",
+  "gold_source_id": "f786c660-ee28-43cc-98a5-5031bb7e81fe",
+  "number": 183,
+  "title": "pendulum_dt.Date can resolve to datetime.date"
+ },
+ {
+  "id": "issue-183-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt.Date TypeAdapter datetime.date validate_python",
+  "source_type": "issue",
+  "gold_source_id": "f786c660-ee28-43cc-98a5-5031bb7e81fe",
+  "number": 183,
+  "title": "pendulum_dt.Date can resolve to datetime.date"
+ },
+ {
+  "id": "issue-33-semantic",
+  "style": "semantic",
+  "query": "How do I add more credit card issuers to the PaymentCardNumber type's list of supported brands?",
+  "source_type": "issue",
+  "gold_source_id": "5ab01aed-f874-4e31-a9ec-30f45b898c15",
+  "number": 33,
+  "title": "Add more card brands to `PaymentCardNumber`"
+ },
+ {
+  "id": "issue-33-keyword",
+  "style": "keyword",
+  "query": "PaymentCardNumber card brands IIN",
+  "source_type": "issue",
+  "gold_source_id": "5ab01aed-f874-4e31-a9ec-30f45b898c15",
+  "number": 33,
+  "title": "Add more card brands to `PaymentCardNumber`"
+ },
+ {
+  "id": "issue-107-semantic",
+  "style": "semantic",
+  "query": "How can I configure a per-model region code and output format for PhoneNumber fields in pydantic-extra-types without changing global settings?",
+  "source_type": "issue",
+  "gold_source_id": "f32d4b6c-b0de-4f95-89b5-ea2c3d571acc",
+  "number": 107,
+  "title": "How to set region-code or format-type for PhoneNumber?"
+ },
+ {
+  "id": "issue-107-keyword",
+  "style": "keyword",
+  "query": "PhoneNumber phone_format region_code E164 pydantic_extra_types",
+  "source_type": "issue",
+  "gold_source_id": "f32d4b6c-b0de-4f95-89b5-ea2c3d571acc",
+  "number": 107,
+  "title": "How to set region-code or format-type for PhoneNumber?"
+ },
+ {
+  "id": "issue-329-semantic",
+  "style": "semantic",
+  "query": "Why does deep copying a Pydantic model with a pendulum Duration field drop the weeks component and corrupt the total duration?",
+  "source_type": "issue",
+  "gold_source_id": "87906f60-8eed-4bff-96f4-b836140beb8d",
+  "number": 329,
+  "title": "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+ },
+ {
+  "id": "issue-329-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt Duration model_copy deep data loss",
+  "source_type": "issue",
+  "gold_source_id": "87906f60-8eed-4bff-96f4-b836140beb8d",
+  "number": 329,
+  "title": "Bug: Data loss in `pendulum_dt.Duration` when using `model_copy(deep=True)`"
+ },
+ {
+  "id": "issue-227-semantic",
+  "style": "semantic",
+  "query": "Why hasn't release 2.10.0 been published to PyPI yet, and when can users install it to access the new S3Path class?",
+  "source_type": "issue",
+  "gold_source_id": "5aabcdd1-c412-4074-9b81-49ea8eb401a1",
+  "number": 227,
+  "title": "Upload version 2.10.0 to PyPI"
+ },
+ {
+  "id": "issue-227-keyword",
+  "style": "keyword",
+  "query": "2.10.0 PyPI S3Path upload release",
+  "source_type": "issue",
+  "gold_source_id": "5aabcdd1-c412-4074-9b81-49ea8eb401a1",
+  "number": 227,
+  "title": "Upload version 2.10.0 to PyPI"
+ },
+ {
+  "id": "issue-187-semantic",
+  "style": "semantic",
+  "query": "How can I use a contextlib ExitStack or AsyncExitStack as a field type in a Pydantic BaseModel without validation failing?",
+  "source_type": "issue",
+  "gold_source_id": "13a0fb9e-6c0e-4227-a355-ffa41beac8c8",
+  "number": 187,
+  "title": "Pydantic does not support contextlib.ExitStack."
+ },
+ {
+  "id": "issue-187-keyword",
+  "style": "keyword",
+  "query": "pydantic ExitStack AsyncExitStack BaseModel field",
+  "source_type": "issue",
+  "gold_source_id": "13a0fb9e-6c0e-4227-a355-ffa41beac8c8",
+  "number": 187,
+  "title": "Pydantic does not support contextlib.ExitStack."
+ },
+ {
+  "id": "issue-353-semantic",
+  "style": "semantic",
+  "query": "Why does a direct import of the Color class from pydantic_extra_types raise an ImportError?",
+  "source_type": "issue",
+  "gold_source_id": "3a275fe1-53d0-4c9c-81b0-622f92171254",
+  "number": 353,
+  "title": "Color import missing in __init__.py ?"
+ },
+ {
+  "id": "issue-353-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types Color __init__.py ImportError",
+  "source_type": "issue",
+  "gold_source_id": "3a275fe1-53d0-4c9c-81b0-622f92171254",
+  "number": 353,
+  "title": "Color import missing in __init__.py ?"
+ },
+ {
+  "id": "issue-232-semantic",
+  "style": "semantic",
+  "query": "Why does the Pendulum 3 upgrade cause an AttributeError when code tries to call instance from the DateTime class?",
+  "source_type": "issue",
+  "gold_source_id": "044ee3c1-9fba-4e90-ac30-3dcd9c3a5500",
+  "number": 232,
+  "title": "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+ },
+ {
+  "id": "issue-232-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt DateTime.instance AttributeError pendulum 3.0.0",
+  "source_type": "issue",
+  "gold_source_id": "044ee3c1-9fba-4e90-ac30-3dcd9c3a5500",
+  "number": 232,
+  "title": "pendulum_dt: type object 'DateTime' has no attribute 'instance'"
+ },
+ {
+  "id": "issue-66-semantic",
+  "style": "semantic",
+  "query": "Is there an option for pydantic's Color serialization to always produce six-digit hex codes rather than shortening #ff0000 to #f00?",
+  "source_type": "issue",
+  "gold_source_id": "b12436fb-d7a0-4935-a7db-f37ac8a7d29b",
+  "number": 66,
+  "title": "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+ },
+ {
+  "id": "issue-66-keyword",
+  "style": "keyword",
+  "query": "Color as_hex format long full hex",
+  "source_type": "issue",
+  "gold_source_id": "b12436fb-d7a0-4935-a7db-f37ac8a7d29b",
+  "number": 66,
+  "title": "Add 6 character only `as_hex` e.g. `Color(\"red\").as_hex(format=\"long\") == #ff0000` "
+ },
+ {
+  "id": "issue-99-semantic",
+  "style": "semantic",
+  "query": "Why does Pydantic 2.4.2 emit deprecation warnings for pydantic_extra_types color and payment validators?",
+  "source_type": "issue",
+  "gold_source_id": "04f8b2b2-4de9-4c15-8f55-1a9a3377f7b7",
+  "number": 99,
+  "title": "Pydantic 2.4.2 dependencies throw deprecation warnings"
+ },
+ {
+  "id": "issue-99-keyword",
+  "style": "keyword",
+  "query": "general_plain_validator_function general_after_validator_function pydantic_extra_types color payment",
+  "source_type": "issue",
+  "gold_source_id": "04f8b2b2-4de9-4c15-8f55-1a9a3377f7b7",
+  "number": 99,
+  "title": "Pydantic 2.4.2 dependencies throw deprecation warnings"
+ },
+ {
+  "id": "issue-291-semantic",
+  "style": "semantic",
+  "query": "Why does importing the TimeZoneName extra type trigger an error demanding the tzdata package, and can it rely on operating system zoneinfo files instead?",
+  "source_type": "issue",
+  "gold_source_id": "52335326-6156-4b26-b3e1-75de2013b4d1",
+  "number": 291,
+  "title": "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+ },
+ {
+  "id": "issue-291-keyword",
+  "style": "keyword",
+  "query": "TimeZoneName tzdata ImportError zoneinfo provider",
+  "source_type": "issue",
+  "gold_source_id": "52335326-6156-4b26-b3e1-75de2013b4d1",
+  "number": 291,
+  "title": "Unnecessary dependency on tzdata on python 3.12 for timezone_name"
+ },
+ {
+  "id": "issue-295-semantic",
+  "style": "semantic",
+  "query": "Why does converting a one-month duration produce a thirty-day string instead of the ISO month format, and why does parsing it back yield weeks?",
+  "source_type": "issue",
+  "gold_source_id": "605f822d-5a26-4e71-88cc-56b407691097",
+  "number": 295,
+  "title": "Months of a Duration are getting (de)serialized incorrectly"
+ },
+ {
+  "id": "issue-295-keyword",
+  "style": "keyword",
+  "query": "Duration months serialization P1M P30D",
+  "source_type": "issue",
+  "gold_source_id": "605f822d-5a26-4e71-88cc-56b407691097",
+  "number": 295,
+  "title": "Months of a Duration are getting (de)serialized incorrectly"
+ },
+ {
+  "id": "issue-356-semantic",
+  "style": "semantic",
+  "query": "How can we validate all ISO 639-3 language codes when the current pycountry dependency omits valid entries like Emiliano-Romagnolo?",
+  "source_type": "issue",
+  "gold_source_id": "bbae96ac-d219-4a8a-b807-047e24aa55a1",
+  "number": 356,
+  "title": "Incomplete ISO639_3 Language List"
+ },
+ {
+  "id": "issue-356-keyword",
+  "style": "keyword",
+  "query": "pycountry iso639-lang eml ISO639-3 LanguageCode",
+  "source_type": "issue",
+  "gold_source_id": "bbae96ac-d219-4a8a-b807-047e24aa55a1",
+  "number": 356,
+  "title": "Incomplete ISO639_3 Language List"
+ },
+ {
+  "id": "issue-307-semantic",
+  "style": "semantic",
+  "query": "Why does the domain validation regex accept numeric IP addresses instead of only valid hostnames?",
+  "source_type": "issue",
+  "gold_source_id": "d59a814a-aa78-4bf1-a81f-06f918fcda3c",
+  "number": 307,
+  "title": "DomainStr allows ip addresses"
+ },
+ {
+  "id": "issue-307-keyword",
+  "style": "keyword",
+  "query": "DomainStr IP address regex",
+  "source_type": "issue",
+  "gold_source_id": "d59a814a-aa78-4bf1-a81f-06f918fcda3c",
+  "number": 307,
+  "title": "DomainStr allows ip addresses"
+ },
+ {
+  "id": "issue-238-semantic",
+  "style": "semantic",
+  "query": "Can Pydantic add a built-in type that stores timestamps as integer seconds since the Unix epoch and emits matching JSON Schema?",
+  "source_type": "issue",
+  "gold_source_id": "6e839309-ab1b-4b5c-b7d8-e2104a4a3237",
+  "number": 238,
+  "title": "data type for unix timestamp - Epoch"
+ },
+ {
+  "id": "issue-238-keyword",
+  "style": "keyword",
+  "query": "Epoch unix timestamp integer serialization schema",
+  "source_type": "issue",
+  "gold_source_id": "6e839309-ab1b-4b5c-b7d8-e2104a4a3237",
+  "number": 238,
+  "title": "data type for unix timestamp - Epoch"
+ },
+ {
+  "id": "issue-287-semantic",
+  "style": "semantic",
+  "query": "Why does the documentation example import Color from the top-level pydantic_extra_types package instead of the color submodule?",
+  "source_type": "issue",
+  "gold_source_id": "d250b322-4144-480a-ab76-5495b31fa495",
+  "number": 287,
+  "title": "Docs use library incorrectly"
+ },
+ {
+  "id": "issue-287-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types.color Color import docs",
+  "source_type": "issue",
+  "gold_source_id": "d250b322-4144-480a-ab76-5495b31fa495",
+  "number": 287,
+  "title": "Docs use library incorrectly"
+ },
+ {
+  "id": "issue-420-semantic",
+  "style": "semantic",
+  "query": "How can I install the lightweight version of the phone number library as an optional dependency for pydantic-extra-types instead of the standard one?",
+  "source_type": "issue",
+  "gold_source_id": "d3927fa9-5ef6-4670-8942-9d53c212a682",
+  "number": 420,
+  "title": "Consider allowing `phonenumberslite` as an extra option"
+ },
+ {
+  "id": "issue-420-keyword",
+  "style": "keyword",
+  "query": "phonenumberslite extra option pydantic-extra-types",
+  "source_type": "issue",
+  "gold_source_id": "d3927fa9-5ef6-4670-8942-9d53c212a682",
+  "number": 420,
+  "title": "Consider allowing `phonenumberslite` as an extra option"
+ },
+ {
+  "id": "issue-414-semantic",
+  "style": "semantic",
+  "query": "Why does pydantic_extra_types pendulum_dt DateTime parse a datetime without timezone information as UTC instead of using the local timezone?",
+  "source_type": "issue",
+  "gold_source_id": "07d400a5-ee2d-4681-9996-7d3d8755ce16",
+  "number": 414,
+  "title": "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+ },
+ {
+  "id": "issue-414-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt DateTime naive timezone local UTC",
+  "source_type": "issue",
+  "gold_source_id": "07d400a5-ee2d-4681-9996-7d3d8755ce16",
+  "number": 414,
+  "title": "v2.11.1 pendulum_dt DateTime parsing shouldn't assume UTC when no timezone is specified"
+ },
+ {
+  "id": "issue-299-semantic",
+  "style": "semantic",
+  "query": "Where can I find documentation for the MongoObjectId type that was added to pydantic extra types?",
+  "source_type": "issue",
+  "gold_source_id": "8778027c-14c6-483f-9439-481db0707837",
+  "number": 299,
+  "title": "Documentation for new `MongoObjectId` type"
+ },
+ {
+  "id": "issue-299-keyword",
+  "style": "keyword",
+  "query": "MongoObjectId documentation pydantic extra types",
+  "source_type": "issue",
+  "gold_source_id": "8778027c-14c6-483f-9439-481db0707837",
+  "number": 299,
+  "title": "Documentation for new `MongoObjectId` type"
+ },
+ {
+  "id": "issue-24-semantic",
+  "style": "semantic",
+  "query": "What is the best way to integrate ISO country, language, and currency data into pydantic-extra-types, possibly via Debian's iso-codes or pycountry?",
+  "source_type": "issue",
+  "gold_source_id": "55a31c02-235f-403c-bdbf-d124fcf775ce",
+  "number": 24,
+  "title": "Use debian's `iso-codes`"
+ },
+ {
+  "id": "issue-24-keyword",
+  "style": "keyword",
+  "query": "iso-codes pycountry country language currency pydantic-extra-types",
+  "source_type": "issue",
+  "gold_source_id": "55a31c02-235f-403c-bdbf-d124fcf775ce",
+  "number": 24,
+  "title": "Use debian's `iso-codes`"
+ },
+ {
+  "id": "issue-228-semantic",
+  "style": "semantic",
+  "query": "Can we introduce utility types for strings that are guaranteed nonempty and for strings containing exactly one character?",
+  "source_type": "issue",
+  "gold_source_id": "75d3d29c-8b6e-4837-8d6e-acb08abd9d74",
+  "number": 228,
+  "title": "Adding basic string types - NonEmptyString, Character"
+ },
+ {
+  "id": "issue-228-keyword",
+  "style": "keyword",
+  "query": "NonEmptyString Character length 1 string type",
+  "source_type": "issue",
+  "gold_source_id": "75d3d29c-8b6e-4837-8d6e-acb08abd9d74",
+  "number": 228,
+  "title": "Adding basic string types - NonEmptyString, Character"
+ },
+ {
+  "id": "issue-74-semantic",
+  "style": "semantic",
+  "query": "What voting thresholds and dependency considerations should determine whether new type definitions are accepted into this package?",
+  "source_type": "issue",
+  "gold_source_id": "b654c9d7-9fc7-449d-a9fd-c39a972bf6da",
+  "number": 74,
+  "title": "How do we decide what to add here?"
+ },
+ {
+  "id": "issue-74-keyword",
+  "style": "keyword",
+  "query": "new types upvote threshold dependency policy",
+  "source_type": "issue",
+  "gold_source_id": "b654c9d7-9fc7-449d-a9fd-c39a972bf6da",
+  "number": 74,
+  "title": "How do we decide what to add here?"
+ },
+ {
+  "id": "issue-130-semantic",
+  "style": "semantic",
+  "query": "Why does pydantic-extra-types pin python-ulid to version 1.x when version 2.x only drops Python 3.7 and 3.8 support?",
+  "source_type": "issue",
+  "gold_source_id": "86d4b8f8-34e2-476b-8e85-c9a45d423b62",
+  "number": 130,
+  "title": "Please support python-ulid 2.x"
+ },
+ {
+  "id": "issue-130-keyword",
+  "style": "keyword",
+  "query": "python-ulid 2.x dependency pin pydantic-extra-types",
+  "source_type": "issue",
+  "gold_source_id": "86d4b8f8-34e2-476b-8e85-c9a45d423b62",
+  "number": 130,
+  "title": "Please support python-ulid 2.x"
+ },
+ {
+  "id": "issue-326-semantic",
+  "style": "semantic",
+  "query": "Why does DomainStr reject valid internationalized domain names when their top-level suffix is encoded in punycode ASCII form?",
+  "source_type": "issue",
+  "gold_source_id": "9f287e2f-73d7-4330-b218-f2e824f0fa31",
+  "number": 326,
+  "title": "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+ },
+ {
+  "id": "issue-326-keyword",
+  "style": "keyword",
+  "query": "DomainStr punycode TLD xn-- regex validation",
+  "source_type": "issue",
+  "gold_source_id": "9f287e2f-73d7-4330-b218-f2e824f0fa31",
+  "number": 326,
+  "title": "DomainStr fails to validate punycode (IDN) TLDs such as xn--..."
+ },
+ {
+  "id": "pull_request-86-semantic",
+  "style": "semantic",
+  "query": "Where does the codebase switch from typing_extensions helpers to standard library type introspection and delete redundant wrappers?",
+  "source_type": "pull_request",
+  "gold_source_id": "be6218ea-131d-4aba-bd07-bf04e13475e7",
+  "number": 86,
+  "title": "Refactor: use stdlib and remove useless code"
+ },
+ {
+  "id": "pull_request-86-keyword",
+  "style": "keyword",
+  "query": "typing get_origin get_args typing_extensions _typing_extra",
+  "source_type": "pull_request",
+  "gold_source_id": "be6218ea-131d-4aba-bd07-bf04e13475e7",
+  "number": 86,
+  "title": "Refactor: use stdlib and remove useless code"
+ },
+ {
+  "id": "pull_request-349-semantic",
+  "style": "semantic",
+  "query": "Why is the documented import path for script codes incorrectly pointing to the language code module instead?",
+  "source_type": "pull_request",
+  "gold_source_id": "6a281221-d096-4498-a359-3dd1fd65d3b8",
+  "number": 349,
+  "title": "Fix import typo in the script code's documentation"
+ },
+ {
+  "id": "pull_request-349-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types.script_code pydantic_extra_types.language_code import typo",
+  "source_type": "pull_request",
+  "gold_source_id": "6a281221-d096-4498-a359-3dd1fd65d3b8",
+  "number": 349,
+  "title": "Fix import typo in the script code's documentation"
+ },
+ {
+  "id": "pull_request-68-semantic",
+  "style": "semantic",
+  "query": "How can I validate a pandas Series column inside a Pydantic model using the extra types package?",
+  "source_type": "pull_request",
+  "gold_source_id": "045c7b10-6a13-4ca8-9f07-dc9286e6ed67",
+  "number": 68,
+  "title": "✨ add `pandas.Series`"
+ },
+ {
+  "id": "pull_request-68-keyword",
+  "style": "keyword",
+  "query": "pandas.Series pydantic_extra_types pandas_types Series validation",
+  "source_type": "pull_request",
+  "gold_source_id": "045c7b10-6a13-4ca8-9f07-dc9286e6ed67",
+  "number": 68,
+  "title": "✨ add `pandas.Series`"
+ },
+ {
+  "id": "pull_request-360-semantic",
+  "style": "semantic",
+  "query": "Where is the change that increments the library version to 2.11.0 and fixes the CI badge link to the new workflow?",
+  "source_type": "pull_request",
+  "gold_source_id": "8525266d-097b-44cb-9fbb-bff25a1c9643",
+  "number": 360,
+  "title": "Update version number for release 2.11.0"
+ },
+ {
+  "id": "pull_request-360-keyword",
+  "style": "keyword",
+  "query": "2.11.0 __init__.py version bump CI badge",
+  "source_type": "pull_request",
+  "gold_source_id": "8525266d-097b-44cb-9fbb-bff25a1c9643",
+  "number": 360,
+  "title": "Update version number for release 2.11.0"
+ },
+ {
+  "id": "pull_request-202-semantic",
+  "style": "semantic",
+  "query": "How can a telephone number type validation enforce that a parsed number belongs to one of the configured supported regions?",
+  "source_type": "pull_request",
+  "gold_source_id": "b3a71002-2872-481c-8803-3b848a8146bd",
+  "number": 202,
+  "title": "feature: Improve phone number validator"
+ },
+ {
+  "id": "pull_request-202-keyword",
+  "style": "keyword",
+  "query": "supported_regions phonenumbers ValidationError supported_formats",
+  "source_type": "pull_request",
+  "gold_source_id": "b3a71002-2872-481c-8803-3b848a8146bd",
+  "number": 202,
+  "title": "feature: Improve phone number validator"
+ },
+ {
+  "id": "pull_request-355-semantic",
+  "style": "semantic",
+  "query": "Where is the incorrect PyPI link for the phonenumbers dependency in the documentation string, and how can it be corrected?",
+  "source_type": "pull_request",
+  "gold_source_id": "640706ec-83b1-4c27-a6fc-77ac0257577c",
+  "number": 355,
+  "title": "🐛 fix: url typo in docstring"
+ },
+ {
+  "id": "pull_request-355-keyword",
+  "style": "keyword",
+  "query": "phonenumbers pypi url docstring typo fix",
+  "source_type": "pull_request",
+  "gold_source_id": "640706ec-83b1-4c27-a6fc-77ac0257577c",
+  "number": 355,
+  "title": "🐛 fix: url typo in docstring"
+ },
+ {
+  "id": "pull_request-426-semantic",
+  "style": "semantic",
+  "query": "How can I install lightweight phone number validation support without pulling in the full phonenumbers package's extra data?",
+  "source_type": "pull_request",
+  "gold_source_id": "dcd834bf-7535-4aff-95fa-d4cdf8d1c1de",
+  "number": 426,
+  "title": "Add a phonenumberslite optional dependency"
+ },
+ {
+  "id": "pull_request-426-keyword",
+  "style": "keyword",
+  "query": "phonenumberslite extra PhoneNumber PhoneNumberValidator",
+  "source_type": "pull_request",
+  "gold_source_id": "dcd834bf-7535-4aff-95fa-d4cdf8d1c1de",
+  "number": 426,
+  "title": "Add a phonenumberslite optional dependency"
+ },
+ {
+  "id": "pull_request-394-semantic",
+  "style": "semantic",
+  "query": "Why do tests fail after Pydantic adds a new description member to the Coordinate schema, and how can we ignore it for both versions?",
+  "source_type": "pull_request",
+  "gold_source_id": "5e75bc89-bb86-4ed5-8def-c1fc8f7027dc",
+  "number": 394,
+  "title": "fix: Adjust tests for Pydantic 2.13"
+ },
+ {
+  "id": "pull_request-394-keyword",
+  "style": "keyword",
+  "query": "Coordinate description Pydantic 2.13 tests",
+  "source_type": "pull_request",
+  "gold_source_id": "5e75bc89-bb86-4ed5-8def-c1fc8f7027dc",
+  "number": 394,
+  "title": "fix: Adjust tests for Pydantic 2.13"
+ },
+ {
+  "id": "pull_request-96-semantic",
+  "style": "semantic",
+  "query": "Why was the documentation refactor in pydantic-extra-types reverted, and what Pydantic pipeline issue did it cause?",
+  "source_type": "pull_request",
+  "gold_source_id": "1fc8dbed-fae5-4639-b7e8-4e79df09e75b",
+  "number": 96,
+  "title": "Revert \"Refactor documentation\""
+ },
+ {
+  "id": "pull_request-96-keyword",
+  "style": "keyword",
+  "query": "revert refactor documentation pydantic-extra-types pipeline",
+  "source_type": "pull_request",
+  "gold_source_id": "1fc8dbed-fae5-4639-b7e8-4e79df09e75b",
+  "number": 96,
+  "title": "Revert \"Refactor documentation\""
+ },
+ {
+  "id": "pull_request-59-semantic",
+  "style": "semantic",
+  "query": "How can I define a fully clear color in the color palette without modifying the existing RGB name dictionary?",
+  "source_type": "pull_request",
+  "gold_source_id": "f014ef09-bcbc-4e34-9edd-0f6781fc832a",
+  "number": 59,
+  "title": "Add support for transparent Color"
+ },
+ {
+  "id": "pull_request-59-keyword",
+  "style": "keyword",
+  "query": "transparent RGBA COLORS_BY_NAME Color",
+  "source_type": "pull_request",
+  "gold_source_id": "f014ef09-bcbc-4e34-9edd-0f6781fc832a",
+  "number": 59,
+  "title": "Add support for transparent Color"
+ },
+ {
+  "id": "pull_request-361-semantic",
+  "style": "semantic",
+  "query": "Why does the scheduled next run test for cron expressions fail when executed on the last day of December?",
+  "source_type": "pull_request",
+  "gold_source_id": "e1407c00-63e0-48c1-a310-0665fff0fb76",
+  "number": 361,
+  "title": "🐛 fix Cron Tests (Happy New Year 🎉 )"
+ },
+ {
+  "id": "pull_request-361-keyword",
+  "style": "keyword",
+  "query": "test_cron_str_next_after Dec 31 next invocation",
+  "source_type": "pull_request",
+  "gold_source_id": "e1407c00-63e0-48c1-a310-0665fff0fb76",
+  "number": 361,
+  "title": "🐛 fix Cron Tests (Happy New Year 🎉 )"
+ },
+ {
+  "id": "pull_request-443-semantic",
+  "style": "semantic",
+  "query": "How to make pydantic raise a value error instead of an assertion failure for non-string Duration inputs?",
+  "source_type": "pull_request",
+  "gold_source_id": "c2798ed1-0f75-4e17-8694-f65ab095654f",
+  "number": 443,
+  "title": "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+ },
+ {
+  "id": "pull_request-443-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt Duration._validate Assertion failed value_error",
+  "source_type": "pull_request",
+  "gold_source_id": "c2798ed1-0f75-4e17-8694-f65ab095654f",
+  "number": 443,
+  "title": "fix(pendulum_dt): raise value_error instead of asserting on non-strin…"
+ },
+ {
+  "id": "pull_request-379-semantic",
+  "style": "semantic",
+  "query": "How can the pendulum_dt module validate Pendulum interval values and parse ISO-8601 interval strings into a wrapper type?",
+  "source_type": "pull_request",
+  "gold_source_id": "001037b4-636f-4f99-8cdb-28e8b0342218",
+  "number": 379,
+  "title": "fix(python): add missing Pendulum Interval wrapper support"
+ },
+ {
+  "id": "pull_request-379-keyword",
+  "style": "keyword",
+  "query": "pendulum_dt Interval wrapper ISO-8601",
+  "source_type": "pull_request",
+  "gold_source_id": "001037b4-636f-4f99-8cdb-28e8b0342218",
+  "number": 379,
+  "title": "fix(python): add missing Pendulum Interval wrapper support"
+ },
+ {
+  "id": "pull_request-100-semantic",
+  "style": "semantic",
+  "query": "Why does pydantic phone numbers emit a deprecation warning for general_after_validator_function and what replacement should be used?",
+  "source_type": "pull_request",
+  "gold_source_id": "a2d7f4b4-d209-4056-aeee-0747c5ace244",
+  "number": 100,
+  "title": "Replaced pydantic_core deprecated method"
+ },
+ {
+  "id": "pull_request-100-keyword",
+  "style": "keyword",
+  "query": "general_after_validator_function with_info_after_validator_function phone_numbers DeprecationWarning pydantic_extra_types",
+  "source_type": "pull_request",
+  "gold_source_id": "a2d7f4b4-d209-4056-aeee-0747c5ace244",
+  "number": 100,
+  "title": "Replaced pydantic_core deprecated method"
+ },
+ {
+  "id": "pull_request-237-semantic",
+  "style": "semantic",
+  "query": "Why does initializing a model with SemanticVersion cause type errors, and how can JSON schema validation enforce semantic version patterns?",
+  "source_type": "pull_request",
+  "gold_source_id": "b20c0edb-eec1-4eab-b2f4-27d6cc9046f5",
+  "number": 237,
+  "title": "Update SemanticVersion"
+ },
+ {
+  "id": "pull_request-237-keyword",
+  "style": "keyword",
+  "query": "SemanticVersion semver.Version JSON Schema pattern __init__",
+  "source_type": "pull_request",
+  "gold_source_id": "b20c0edb-eec1-4eab-b2f4-27d6cc9046f5",
+  "number": 237,
+  "title": "Update SemanticVersion"
+ },
+ {
+  "id": "pull_request-53-semantic",
+  "style": "semantic",
+  "query": "How can continuous integration enforce a minimum test coverage threshold while keeping the payment and color example modules current?",
+  "source_type": "pull_request",
+  "gold_source_id": "843d9d5f-8cbb-448d-bffa-489c8199b842",
+  "number": 53,
+  "title": "👷 Add coverage check on the pipeline"
+ },
+ {
+  "id": "pull_request-53-keyword",
+  "style": "keyword",
+  "query": "coverage pipeline payment.py color.py",
+  "source_type": "pull_request",
+  "gold_source_id": "843d9d5f-8cbb-448d-bffa-489c8199b842",
+  "number": 53,
+  "title": "👷 Add coverage check on the pipeline"
+ },
+ {
+  "id": "pull_request-354-semantic",
+  "style": "semantic",
+  "query": "When directly instantiating an S3Path with a malformed value, why does it raise an unexpected exception type instead of a validation error?",
+  "source_type": "pull_request",
+  "gold_source_id": "a878ddbe-a29c-49e0-a3f9-9ef4f7d92caf",
+  "number": 354,
+  "title": "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+ },
+ {
+  "id": "pull_request-354-keyword",
+  "style": "keyword",
+  "query": "S3Path ValueError AttributeError pydantic-extra-types",
+  "source_type": "pull_request",
+  "gold_source_id": "a878ddbe-a29c-49e0-a3f9-9ef4f7d92caf",
+  "number": 354,
+  "title": "♻️ raise `ValueError` instead of `AttributeError` on wrong `S3Path` value"
+ },
+ {
+  "id": "pull_request-403-semantic",
+  "style": "semantic",
+  "query": "Why do some Unicode numeral values pass bank routing checksum validation but then fail when converted to an integer?",
+  "source_type": "pull_request",
+  "gold_source_id": "88e4345e-c750-40e6-a6a2-01911ef2c6ec",
+  "number": 403,
+  "title": "fix: reject non-ASCII ABA routing digits"
+ },
+ {
+  "id": "pull_request-403-keyword",
+  "style": "keyword",
+  "query": "ABA routing non-ASCII isdigit checksum",
+  "source_type": "pull_request",
+  "gold_source_id": "88e4345e-c750-40e6-a6a2-01911ef2c6ec",
+  "number": 403,
+  "title": "fix: reject non-ASCII ABA routing digits"
+ },
+ {
+  "id": "pull_request-27-semantic",
+  "style": "semantic",
+  "query": "How can I add a development container to this project that uses pip-tools instead of poetry for dependency management?",
+  "source_type": "pull_request",
+  "gold_source_id": "822f134d-5d38-4e71-a5aa-03b88b07a490",
+  "number": 27,
+  "title": "Add a dev container"
+ },
+ {
+  "id": "pull_request-27-keyword",
+  "style": "keyword",
+  "query": "dev container pip-tools template",
+  "source_type": "pull_request",
+  "gold_source_id": "822f134d-5d38-4e71-a5aa-03b88b07a490",
+  "number": 27,
+  "title": "Add a dev container"
+ },
+ {
+  "id": "pull_request-358-semantic",
+  "style": "semantic",
+  "query": "Why are coordinate and schema validation tests failing because regex constraints are missing from anticipated JSON output after a Pydantic update?",
+  "source_type": "pull_request",
+  "gold_source_id": "6ca02001-dd48-4a01-9ee2-b3c88ab60a56",
+  "number": 358,
+  "title": "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+ },
+ {
+  "id": "pull_request-358-keyword",
+  "style": "keyword",
+  "query": "test_json_schema test_coordinate regex pattern 4057cd2",
+  "source_type": "pull_request",
+  "gold_source_id": "6ca02001-dd48-4a01-9ee2-b3c88ab60a56",
+  "number": 358,
+  "title": "tests: Add regex patterns to the expected JSON schema for test_json_schema"
+ },
+ {
+  "id": "pull_request-26-semantic",
+  "style": "semantic",
+  "query": "Why are the pydantic color type unit tests failing after a recent commit, and how should they be fixed?",
+  "source_type": "pull_request",
+  "gold_source_id": "7190b0d3-389d-4a75-a3b4-ca522f23beaf",
+  "number": 26,
+  "title": "Fix Failed tests for `color` type"
+ },
+ {
+  "id": "pull_request-26-keyword",
+  "style": "keyword",
+  "query": "pydantic color type failed tests",
+  "source_type": "pull_request",
+  "gold_source_id": "7190b0d3-389d-4a75-a3b4-ca522f23beaf",
+  "number": 26,
+  "title": "Fix Failed tests for `color` type"
+ },
+ {
+  "id": "pull_request-376-semantic",
+  "style": "semantic",
+  "query": "Why does the timezone type reject abbreviations such as EDT while allowing EST inconsistently across platforms, and how to fix it?",
+  "source_type": "pull_request",
+  "gold_source_id": "743b0978-60c2-4d75-962e-4348a680d2ae",
+  "number": 376,
+  "title": "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+ },
+ {
+  "id": "pull_request-376-keyword",
+  "style": "keyword",
+  "query": "TimeZoneName EDT EST zoneinfo available_timezones",
+  "source_type": "pull_request",
+  "gold_source_id": "743b0978-60c2-4d75-962e-4348a680d2ae",
+  "number": 376,
+  "title": "fix: accept common timezone abbreviations like EDT in TimeZoneName validator"
+ },
+ {
+  "id": "pull_request-116-semantic",
+  "style": "semantic",
+  "query": "How can I validate and normalize ISBN-10 and ISBN-13 numbers to the 13-digit format in Pydantic models?",
+  "source_type": "pull_request",
+  "gold_source_id": "0bcfd2eb-4773-447c-9ea9-baae5445bcd9",
+  "number": 116,
+  "title": "Add: New type ISBN"
+ },
+ {
+  "id": "pull_request-116-keyword",
+  "style": "keyword",
+  "query": "pydantic_extra_types.isbn ISBN-10 ISBN-13",
+  "source_type": "pull_request",
+  "gold_source_id": "0bcfd2eb-4773-447c-9ea9-baae5445bcd9",
+  "number": 116,
+  "title": "Add: New type ISBN"
+ },
+ {
+  "id": "pull_request-325-semantic",
+  "style": "semantic",
+  "query": "How can we add support for Diners Club cards and extend Mastercard validation in a payment card brand detection system?",
+  "source_type": "pull_request",
+  "gold_source_id": "0ffbb813-a0ae-4300-9c29-560b3f33e98b",
+  "number": 325,
+  "title": "feat: update credit card brands"
+ },
+ {
+  "id": "pull_request-325-keyword",
+  "style": "keyword",
+  "query": "Diners Club Mastercard card brand validation",
+  "source_type": "pull_request",
+  "gold_source_id": "0ffbb813-a0ae-4300-9c29-560b3f33e98b",
+  "number": 325,
+  "title": "feat: update credit card brands"
+ },
+ {
+  "id": "pull_request-437-semantic",
+  "style": "semantic",
+  "query": "How can I quickly get a language's alpha-2 code or English name using an ISO 639-3 object?",
+  "source_type": "pull_request",
+  "gold_source_id": "b19b0319-ebd5-4d74-b107-30d05312d22b",
+  "number": 437,
+  "title": "Add convenient lookup to ISO639_3 for alpha2 and name"
+ },
+ {
+  "id": "pull_request-437-keyword",
+  "style": "keyword",
+  "query": "ISO639_3 alpha2 name lookup LanguageAlpha2",
+  "source_type": "pull_request",
+  "gold_source_id": "b19b0319-ebd5-4d74-b107-30d05312d22b",
+  "number": 437,
+  "title": "Add convenient lookup to ISO639_3 for alpha2 and name"
+ },
+ {
+  "id": "pull_request-347-semantic",
+  "style": "semantic",
+  "query": "How can I fix the code examples in the phone number parsing library's documentation so they are properly indented and use correct comment syntax?",
+  "source_type": "pull_request",
+  "gold_source_id": "28a19abc-28d9-4d1f-b713-571d7746308c",
+  "number": 347,
+  "title": "📝 docs: improve example formatting in PhoneNumber documentation"
+ },
+ {
+  "id": "pull_request-347-keyword",
+  "style": "keyword",
+  "query": "PhoneNumber docs indentation comment markers",
+  "source_type": "pull_request",
+  "gold_source_id": "28a19abc-28d9-4d1f-b713-571d7746308c",
+  "number": 347,
+  "title": "📝 docs: improve example formatting in PhoneNumber documentation"
+ },
+ {
+  "id": "pull_request-296-semantic",
+  "style": "semantic",
+  "query": "How can Pendulum's Duration objects be correctly converted to and from ISO 8601 strings when they include months, negative values, or sub-second precision?",
+  "source_type": "pull_request",
+  "gold_source_id": "88d4b427-29de-4459-944a-1a3a18eb8d3e",
+  "number": 296,
+  "title": "fix (de-)serialization of pendulum durations"
+ },
+ {
+  "id": "pull_request-296-keyword",
+  "style": "keyword",
+  "query": "pendulum Duration ISO 8601 serialization months",
+  "source_type": "pull_request",
+  "gold_source_id": "88d4b427-29de-4459-944a-1a3a18eb8d3e",
+  "number": 296,
+  "title": "fix (de-)serialization of pendulum durations"
+ },
+ {
+  "id": "pull_request-203-semantic",
+  "style": "semantic",
+  "query": "How can I create composable region-restricted phone number types using an annotation-based validator instead of fixed concrete classes?",
+  "source_type": "pull_request",
+  "gold_source_id": "192505ce-48e7-4ba7-9f82-7ca751465321",
+  "number": 203,
+  "title": "Feature: Add phone number validator"
+ },
+ {
+  "id": "pull_request-203-keyword",
+  "style": "keyword",
+  "query": "PhoneNumberValidator BeforeValidator supported_regions default_region pydantic_extra_types",
+  "source_type": "pull_request",
+  "gold_source_id": "192505ce-48e7-4ba7-9f82-7ca751465321",
+  "number": 203,
+  "title": "Feature: Add phone number validator"
+ },
+ {
+  "id": "pull_request-310-semantic",
+  "style": "semantic",
+  "query": "How can I use the whenever library's date and time types with Pydantic models using annotated validators?",
+  "source_type": "pull_request",
+  "gold_source_id": "e461ae3b-f63c-40e0-8545-8aa53b13a27f",
+  "number": 310,
+  "title": "✨ Add support for the whenever package"
+ },
+ {
+  "id": "pull_request-310-keyword",
+  "style": "keyword",
+  "query": "whenever pydantic InstantAnnotation ZonedDateTimeAnnotation DateDeltaAnnotation",
+  "source_type": "pull_request",
+  "gold_source_id": "e461ae3b-f63c-40e0-8545-8aa53b13a27f",
+  "number": 310,
+  "title": "✨ Add support for the whenever package"
+ },
+ {
+  "id": "pull_request-433-semantic",
+  "style": "semantic",
+  "query": "How do I define a Pydantic extra type for a 64-character SHA-256 hex digest that normalizes case and whitespace and appears in the JSON schema?",
+  "source_type": "pull_request",
+  "gold_source_id": "2b501484-8599-489a-aece-ea811c311b6a",
+  "number": 433,
+  "title": "Add Sha256Str type"
+ },
+ {
+  "id": "pull_request-433-keyword",
+  "style": "keyword",
+  "query": "Sha256Str pydantic_extra_types str_schema 64 hex",
+  "source_type": "pull_request",
+  "gold_source_id": "2b501484-8599-489a-aece-ea811c311b6a",
+  "number": 433,
+  "title": "Add Sha256Str type"
+ },
+ {
+  "id": "pull_request-308-semantic",
+  "style": "semantic",
+  "query": "Why does the domain validation accept IP addresses and CIDR blocks, and how can the regular expression be changed to reject them?",
+  "source_type": "pull_request",
+  "gold_source_id": "6e62b46d-021a-4665-a165-01d0b11a29ab",
+  "number": 308,
+  "title": "♻️ Fix regex pattern for Domain"
+ },
+ {
+  "id": "pull_request-308-keyword",
+  "style": "keyword",
+  "query": "domain regexp ip cidr validation",
+  "source_type": "pull_request",
+  "gold_source_id": "6e62b46d-021a-4665-a165-01d0b11a29ab",
+  "number": 308,
+  "title": "♻️ Fix regex pattern for Domain"
+ },
+ {
+  "id": "pull_request-236-semantic",
+  "style": "semantic",
+  "query": "Why should a lowercase currency code like eur be accepted and automatically converted to uppercase instead of being rejected?",
+  "source_type": "pull_request",
+  "gold_source_id": "a5c5ecc8-5128-4cfa-9199-2547fa5d0e9e",
+  "number": 236,
+  "title": "lower case currency is valid"
+ },
+ {
+  "id": "pull_request-236-keyword",
+  "style": "keyword",
+  "query": "eur lowercase currency normalize uppercase",
+  "source_type": "pull_request",
+  "gold_source_id": "a5c5ecc8-5128-4cfa-9199-2547fa5d0e9e",
+  "number": 236,
+  "title": "lower case currency is valid"
+ },
+ {
+  "id": "pull_request-199-semantic",
+  "style": "semantic",
+  "query": "How do I add a field type that validates and parses semantic version strings in pydantic models?",
+  "source_type": "pull_request",
+  "gold_source_id": "78e3e1a7-4289-4e4b-bbc3-e2a26b5c3f5c",
+  "number": 199,
+  "title": "Add semantic version type"
+ },
+ {
+  "id": "pull_request-199-keyword",
+  "style": "keyword",
+  "query": "pydantic custom semver type",
+  "source_type": "pull_request",
+  "gold_source_id": "78e3e1a7-4289-4e4b-bbc3-e2a26b5c3f5c",
+  "number": 199,
+  "title": "Add semantic version type"
+ },
+ {
+  "id": "pull_request-151-semantic",
+  "style": "semantic",
+  "query": "How do I fix JSON schema serialization for a custom Pydantic field representing MongoDB ObjectId?",
+  "source_type": "pull_request",
+  "gold_source_id": "b2e06870-162e-499b-9ecb-a8f5915ef249",
+  "number": 151,
+  "title": "Added in a new object id field for mongodb"
+ },
+ {
+  "id": "pull_request-151-keyword",
+  "style": "keyword",
+  "query": "ObjectIdField model_json_schema serialization pydantic mongodb",
+  "source_type": "pull_request",
+  "gold_source_id": "b2e06870-162e-499b-9ecb-a8f5915ef249",
+  "number": 151,
+  "title": "Added in a new object id field for mongodb"
+ },
+ {
+  "id": "pull_request-435-semantic",
+  "style": "semantic",
+  "query": "Why does an out-of-range integer passed to a ULID field raise an unhandled overflow exception instead of being reported as invalid input?",
+  "source_type": "pull_request",
+  "gold_source_id": "43b44739-2c1a-4a1b-bbb1-be747bbed3a8",
+  "number": 435,
+  "title": "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+ },
+ {
+  "id": "pull_request-435-keyword",
+  "style": "keyword",
+  "query": "ULID OverflowError ValidationError ulid_format 2**128",
+  "source_type": "pull_request",
+  "gold_source_id": "43b44739-2c1a-4a1b-bbb1-be747bbed3a8",
+  "number": 435,
+  "title": "fix(ulid): raise ValidationError for ints outside the 128-bit range"
+ },
+ {
+  "id": "pull_request-408-semantic",
+  "style": "semantic",
+  "query": "Why do integer or missing values passed to ISBN, IBAN, and MAC address fields crash with TypeError instead of a validation error?",
+  "source_type": "pull_request",
+  "gold_source_id": "9497e06b-237a-467a-8185-a56dfa0a1147",
+  "number": 408,
+  "title": "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+ },
+ {
+  "id": "pull_request-408-keyword",
+  "style": "keyword",
+  "query": "isbn iban mac_address non-string ValidationError",
+  "source_type": "pull_request",
+  "gold_source_id": "9497e06b-237a-467a-8185-a56dfa0a1147",
+  "number": 408,
+  "title": "fix(isbn, iban, mac_address): raise ValidationError for non-string input"
+ },
+ {
+  "id": "pull_request-50-semantic",
+  "style": "semantic",
+  "query": "Where can I find documentation examples for pydantic's PaymentCardNumber and Color field types?",
+  "source_type": "pull_request",
+  "gold_source_id": "01a1cd6e-72fc-4120-bc4d-e3c9c9fa7c48",
+  "number": 50,
+  "title": "📝 Add documentation for `Color` and `PaymentCardNumber`"
+ },
+ {
+  "id": "pull_request-50-keyword",
+  "style": "keyword",
+  "query": "pydantic PaymentCardNumber Color docs",
+  "source_type": "pull_request",
+  "gold_source_id": "01a1cd6e-72fc-4120-bc4d-e3c9c9fa7c48",
+  "number": 50,
+  "title": "📝 Add documentation for `Color` and `PaymentCardNumber`"
+ },
+ {
+  "id": "pull_request-431-semantic",
+  "style": "semantic",
+  "query": "Why does domain validation reject valid internationalized TLDs when the punycode A-label after xn-- contains an internal hyphen?",
+  "source_type": "pull_request",
+  "gold_source_id": "7fed7c5f-e1a1-4b8f-b636-d6ab2f301d71",
+  "number": 431,
+  "title": "Accept internal hyphens in punycode top-level domains"
+ },
+ {
+  "id": "pull_request-431-keyword",
+  "style": "keyword",
+  "query": "DomainStr punycode A-label xn-- internal hyphen",
+  "source_type": "pull_request",
+  "gold_source_id": "7fed7c5f-e1a1-4b8f-b636-d6ab2f301d71",
+  "number": 431,
+  "title": "Accept internal hyphens in punycode top-level domains"
+ },
+ {
+  "id": "pull_request-395-semantic",
+  "style": "semantic",
+  "query": "Why does ruff flag the timezone abbreviation list in pydantic extra types as having a duplicate set item?",
+  "source_type": "pull_request",
+  "gold_source_id": "9bafa47b-9d42-4291-9a9e-4952d4b2b0b5",
+  "number": 395,
+  "title": "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+ },
+ {
+  "id": "pull_request-395-keyword",
+  "style": "keyword",
+  "query": "timezone_name.py B033 duplicate IST _COMMON_TZ_ABBREVIATIONS",
+  "source_type": "pull_request",
+  "gold_source_id": "9bafa47b-9d42-4291-9a9e-4952d4b2b0b5",
+  "number": 395,
+  "title": "fix: remove duplicate 'IST' entry in _COMMON_TZ_ABBREVIATIONS"
+ },
+ {
+  "id": "pull_request-341-semantic",
+  "style": "semantic",
+  "query": "Where can I find detailed documentation and code samples for the PhoneNumber type, covering default changes and validator usage?",
+  "source_type": "pull_request",
+  "gold_source_id": "f174420c-ada2-42f1-ac58-40a5e7f883ec",
+  "number": 341,
+  "title": "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+ },
+ {
+  "id": "pull_request-341-keyword",
+  "style": "keyword",
+  "query": "PhoneNumber docstring examples subclassing validator annotation",
+  "source_type": "pull_request",
+  "gold_source_id": "f174420c-ada2-42f1-ac58-40a5e7f883ec",
+  "number": 341,
+  "title": "📝 docs: enhance docstring for `PhoneNumber` class with usage examples"
+ }
+]

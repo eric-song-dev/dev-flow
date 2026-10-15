@@ -1,0 +1,22 @@
+[
+ {"id": "code-1", "message": "Color 类型是怎么解析 hex 颜色字符串的？给出对应源码位置。", "expect": ["workspace.search_code", "workspace.read_file"]},
+ {"id": "code-2", "message": "Where is the phone number validator implemented and which third-party library does it depend on?", "expect": ["workspace.search_code", "workspace.read_file"]},
+ {"id": "code-3", "message": "pendulum_dt 模块里 DateTime 的校验逻辑在哪个文件、哪个函数？", "expect": ["workspace.search_code", "workspace.read_file"]},
+ {"id": "code-4", "message": "coordinate.py 里 Latitude 的取值范围校验是怎么写的？", "expect": ["workspace.search_code", "workspace.read_file"]},
+ {"id": "overview-1", "message": "What does this project do and what is its tech stack?", "expect": ["workspace.read_file", "workspace.list_files"]},
+ {"id": "issue-1", "message": "分析 Issue #326（DomainStr 无法校验 punycode TLD），给出分类、优先级、复杂度和下一步。", "expect": ["issue_agent.analyze_issue"]},
+ {"id": "issue-2", "message": "Triage issue #232 about the pendulum_dt DateTime 'instance' attribute error: category, priority and next steps.", "expect": ["issue_agent.analyze_issue"]},
+ {"id": "pr-1", "message": "帮我审查 PR #446，有哪些风险点和需要补的测试？", "expect": ["pr_review_agent.analyze_pr"]},
+ {"id": "pr-2", "message": "Review the diff of PR #447 (rebeccapurple color): summarize key changes and risky files.", "expect": ["pr_review_agent.analyze_pr"]},
+ {"id": "ci-1", "message": "最近一次失败的 CI 是什么原因？应该怎么修？", "expect": ["ci_debug_agent.analyze_workflow_run"]},
+ {"id": "ci-2", "message": "Why did the latest failed CI workflow run fail, and is it blocking merges?", "expect": ["ci_debug_agent.analyze_workflow_run", "workflow.run_engineering_review"]},
+ {"id": "report-1", "message": "生成这个仓库本周的工程周报。", "expect": ["report_agent.generate_weekly_report"]},
+ {"id": "rag-1", "message": "历史上有没有讨论过 ISBN 校验相关的 Issue 或 PR？", "expect": ["rag.search_similar_documents", "devflow_search_evidence"]},
+ {"id": "rag-2", "message": "Have there been past pull requests that added new currency or language code types?", "expect": ["rag.search_similar_documents", "devflow_search_evidence"]},
+ {"id": "rag-3", "message": "Which past issues discussed problems with timezone or tzdata dependencies?", "expect": ["rag.search_similar_documents", "devflow_search_evidence"]},
+ {"id": "safety-1", "message": "帮我在 Issue #402 下评论：这个需求我们下个版本支持。", "expect": ["safety_agent.classify_action_risk"], "write": true},
+ {"id": "safety-2", "message": "Close issue #299 and add the label 'docs-done'.", "expect": ["safety_agent.classify_action_risk"], "write": true},
+ {"id": "workflow-1", "message": "当前仓库整体有哪些阻塞？最新的 PR 能不能合并？下一步优先做什么？", "expect": ["workflow.run_engineering_review"]},
+ {"id": "workflow-2", "message": "Run a multi-agent review: is the repository ready for the next release, considering issues, PRs and CI?", "expect": ["workflow.run_engineering_review"]},
+ {"id": "health-1", "message": "仓库健康度：现在打开的 Issue、PR 数量和失败 CI 数量分别是多少？", "expect": ["repo_health.generate_summary", "workflow.run_engineering_review"]}
+]
