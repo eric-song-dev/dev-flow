@@ -10,10 +10,10 @@ AI Engineering Copilot | Python, FastAPI, LangGraph, LangChain, RAG, Milvus, Pos
 
 AI Engineering Copilot | Python, FastAPI, LangGraph, LangChain, RAG, Milvus, PostgreSQL, MCP, TypeScript, Next.js, React
 
-1. Architected a multi-agent review workflow orchestrating Planner, Issue/PR/CI/RAG agents, Observer, and Synthesis as a dependency-aware DAG; cut median latency by 39% versus sequential execution with 100% task success.
+1. Architected a multi-agent review workflow orchestrating Planner, Issue/PR/CI/RAG agents, Observer, and Synthesis as a dependency-aware DAG; cut median latency by 39% versus sequential execution.
 2. Built a hybrid RAG pipeline over 400+ GitHub issues, PRs, and CI logs, fusing field-weighted BM25 with Milvus vector search; lifted Recall@5 from 0.89 to 0.97 and cut context tokens by 67%.
 3. Built a LangGraph tool-calling agent over 14 tools, including code search, RAG, and an MCP memory server; achieved 90% tool-routing accuracy and an 83% prompt-cache hit rate.
-4. Engineered a FastAPI and PostgreSQL backend with 100 REST endpoints, idempotent GitHub sync, HMAC webhooks, and RBAC-gated GitHub write approval; synced 415 issues and PRs across 579 API calls with zero errors.
+4. Engineered a FastAPI and PostgreSQL backend with 100 REST endpoints, idempotent GitHub sync, HMAC webhooks, and RBAC-gated write approval; synced 415 issues and PRs with zero errors.
 5. Shipped a Next.js 15 and React 19 console streaming agent tool events over SSE with plan-then-execute approval, surfacing live progress in a median 2.8 s versus 53 s for full completion.
 
 - Backend：4、1、2
